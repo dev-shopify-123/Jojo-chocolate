@@ -1,0 +1,1690 @@
+{
+  "current": {
+    "color_text": "#488d31",
+    "color_body_text": "#6d6d6d",
+    "color_sale_text": "#DA2F0C",
+    "color_button": "#DA2F0C",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#162950",
+    "color_text_field_text": "#162950",
+    "color_text_field_border": "#909090",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#3d3d3d",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e4e4e4",
+    "color_body_bg": "#f8f8f8",
+    "type_header_font": "futura_n7",
+    "type_header_base_size": 23,
+    "type_base_font": "work_sans_n4",
+    "type_base_size": 18,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/JOJOSChocolateBark\/",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/jojos\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/jojo_720x_540x_08634f6f-eaf1-4461-95e1-afcd6ba07279.png",
+    "currency_code_enabled": false,
+    "checkout_header_image": "shopify:\/\/shop_images\/Untitled_design_1.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/jojo_720x_540x_08634f6f-eaf1-4461-95e1-afcd6ba07279.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "shopify:\/\/shop_images\/Background-Compressed.png",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#8db48a",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#48a23f",
+    "checkout_button_color": "#c63663",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/Jojo_Packaging_DeckAssets_V1_Logo.png",
+          "logo_max_width": 185,
+          "main_linklist": "sidebar_menu",
+          "message": true,
+          "home_page_only": false,
+          "message_text": "NEW! Granola Butter Filled Bites......FREE SHIPPING over $30",
+          "message_link": "shopify:\/\/products\/granolabutterfilledbites",
+          "color_bg": "#c85d1f",
+          "color_text": "#ffffff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/HQ5PSBHEADER.png",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "large",
+          "title": "NEW! Pumpkin Spice Bites!",
+          "text": "<p>Satisfy all of your pumpkin cravings with our Pumpkin Spice Bites. Filled with Oat Haus Pumpkin Spice Granola Butter & topped with crunchy granola.<\/p>",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1492095993817": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "1492095993817"
+        ],
+        "settings": {
+          "slideshow_height": "medium",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 5,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "blog_show_author": true,
+          "blog_show_date": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "About Us",
+              "text": "<p>JOJO's was created by Momma Jojo, who after being diagnosed with breast cancer needed to get her health back. She started by trying to control her sugar cravings. This is when JOJO's Chocolate Bark was born! Try JOJO's today to kick your sugar craving!\n<\/p>\n<p>\ncontact@jojoschocolate.com\n<\/p>\n<p>\n<i class=\"fa fa-phone\"><\/i> \n+1 805-395-6567                          <\/p>"
+            }
+          },
+          "link_list": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "35ce8b17-0f15-485a-ba57-7b301ff1f1c9": {
+            "type": "text",
+            "settings": {
+              "title": "Follow Us",
+              "text": "<ul class=\"list--inline site-footer__social-icons social-icons site-footer__icon-list\">\n<li class=\"social-icons__item\">\n                  <a class=\"social-icons__link\" href=\"#\" aria-describedby=\"a11y-external-message\"><i class=\"fa fa-facebook-f fa-fw\"><\/i><span class=\"icon__fallback-text\">Facebook<\/span>\n                  <\/a>\n                <\/li>\n<li class=\"social-icons__item\">\n                  <a class=\"social-icons__link\" href=\"#\" aria-describedby=\"a11y-external-message\"><i class=\"fab fa-instagram fa-fw\"><\/i><span class=\"icon__fallback-text\">Instagram<\/span>\n                  <\/a>\n                <\/li>\n<\/ul>"
+            }
+          },
+          "f6cfa8f6-0b48-4e40-b740-910b03fc7127": {
+            "type": "newsletter",
+            "settings": {
+              "title": "DELICIOUSNESS RIGHT IN YOUR INBOX"
+            }
+          }
+        },
+        "block_order": [
+          "text",
+          "link_list",
+          "35ce8b17-0f15-485a-ba57-7b301ff1f1c9",
+          "f6cfa8f6-0b48-4e40-b740-910b03fc7127"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#003200",
+          "color_footer_text": "#ffffff",
+          "show_currency_selector": true,
+          "show_locale_selector": false
+        }
+      },
+      "1631885842f763354f": {
+        "type": "slider-with-right-box",
+        "settings": {
+          "section-image": "shopify:\/\/shop_images\/GB_for_Homepage.png",
+          "section-image-mobile": "shopify:\/\/shop_images\/4_1059c2ac-8ed9-4264-be4b-ef44e38b600d.png",
+          "section-heading": "Meet the Newest Member of JOJO's",
+          "description": "Satisfy your sweet snack cravings with JOJO’s deliciously low-sugar Granola Butter Bites! Filled with Oat Haus Granola Butter and topped with gluten-free granola to add the perfect crunch.",
+          "view-btn-link": "shopify:\/\/products\/granolabutterfilledbites",
+          "view-btn": "SHOP NOW",
+          "heading-color": "#1961ae",
+          "description-color": "#6191b4",
+          "button-color": "#1961ae",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "16318897133fe65f4a": {
+        "type": "custom-content",
+        "blocks": {
+          "16318897133fe65f4a-0": {
+            "type": "text",
+            "settings": {
+              "title": "Where snack and treat, meet!",
+              "text": "<p>We found the sweet spot: a new way to snack that doesn’t come with compromises. Go ahead, indulge in JoJo’s whenever you feel like it. It’s a better-for-you alternative that bridges the divide between treat and snack. Guilt-free. <\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center",
+              "headingsize_text": "35px",
+              "headingcolor_text": "#488d31",
+              "parasize_text": "",
+              "paracolor_text": ""
+            }
+          },
+          "16318897133fe65f4a-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/choco-bars_720x_900x_8d74d688-8bd9-40a1-aa32-de59493fbeca.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "16318897133fe65f4a-0",
+          "16318897133fe65f4a-1"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "shopify:\/\/collections\/flavors",
+          "view-btn": "Shop Now",
+          "button-color": "#488d31",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "1631890185be22b33b": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "collection": "flavors",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "163212653651c2fd62": {
+        "type": "feature-columns",
+        "blocks": {
+          "163212653651c2fd62-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/pb_bf860263-bfac-47ac-8cf1-3a1b0aeb26c9.png",
+              "title": "Peanut Butter Delight",
+              "text": "",
+              "button_label": "",
+              "button_link": "https:\/\/jojoschocolate.com\/products\/peanut-butter-delight-bars-8-4oz-bag-7-bars"
+            }
+          },
+          "163212653651c2fd62-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/hawaiian_98284a9d-cd87-40fa-b77f-dc884cd664a4.png",
+              "title": "Goes Hawaiian",
+              "text": "",
+              "button_label": "",
+              "button_link": "https:\/\/jojoschocolate.com\/products\/goes-hawaiian-bars-8-4oz-bag-7-bars"
+            }
+          },
+          "00d5493c-b8d9-467e-bfd5-884a62f25ed7": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/raspberry_a9d6c740-618a-4b05-ab00-6ca1ffb34b34.png",
+              "title": "Raspberry Dream",
+              "text": "",
+              "button_label": "",
+              "button_link": "https:\/\/jojoschocolate.com\/collections\/flavors\/products\/raspberry-dream-bars-8-4oz-bag-7-bars"
+            }
+          },
+          "163212653651c2fd62-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/original_3ddfe467-8b8d-4bd6-afaf-82c985021e22.png",
+              "title": "Original",
+              "text": "",
+              "button_label": "",
+              "button_link": "https:\/\/jojoschocolate.com\/collections\/flavors\/products\/original-bars-8-4oz-bag-7-bars"
+            }
+          }
+        },
+        "block_order": [
+          "163212653651c2fd62-1",
+          "163212653651c2fd62-2",
+          "00d5493c-b8d9-467e-bfd5-884a62f25ed7",
+          "163212653651c2fd62-0"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "center"
+        }
+      },
+      "16322303567de85999": {
+        "type": "custom-content",
+        "blocks": {
+          "16322303567de85999-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0085_720x_720x_56368c00-e425-4f8d-b5fa-a0966d29660a.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "16322303567de85999-0": {
+            "type": "text",
+            "settings": {
+              "title": "Made from love.",
+              "text": "<p>My mom “JOJO” has always been an inspiration to me. She was radiantly positive and happy no matter what challenges came her way, so when diagnosed with breast cancer she faced it head on with a smile.<br\/><\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center",
+              "headingsize_text": "36px",
+              "headingcolor_text": "#488d31",
+              "parasize_text": "",
+              "paracolor_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "16322303567de85999-1",
+          "16322303567de85999-0"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "https:\/\/jojoschocolate.com\/pages\/jojos-story",
+          "view-btn": "Read More",
+          "button-color": "#488d31",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "163223066062506915": {
+        "type": "custom-content",
+        "blocks": {
+          "163223066062506915-0": {
+            "type": "text",
+            "settings": {
+              "title": "#kickthecraving",
+              "text": "<p>We’re the only chocolate company that wants you to eat less, not more! A daily dose of JOJO’s deliciousness will help you kick your sugar cravings. We added slow-digesting plant-based protein-containing dietary fiber to help regulate blood glucose, reduce energy crashes and sugar cravings!<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "center",
+              "headingsize_text": "36px",
+              "headingcolor_text": "#488d31",
+              "parasize_text": "",
+              "paracolor_text": ""
+            }
+          },
+          "163223066062506915-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bars_720x_720x_4ef5a34a-9f7a-4565-bcec-ab0a9b24daf0.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "163223066062506915-0",
+          "163223066062506915-1"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "shopify:\/\/collections\/jojos-chocolate-daily",
+          "view-btn": "Buy Now",
+          "button-color": "#488d31",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "1632300079c6bc84d9": {
+        "type": "imagewithtext-section-bg",
+        "settings": {
+          "heading": "Everything you want, nothing you don’t.",
+          "center_image": "shopify:\/\/shop_images\/may-2020-icons_1080x_3842f6b7-e4dc-4612-bd50-74ed0ae1a9e1.png",
+          "up_image": "shopify:\/\/shop_images\/may-2020-icons_1080x_3842f6b7-e4dc-4612-bd50-74ed0ae1a9e1.png"
+        }
+      },
+      "163230013171d30496": {
+        "type": "custom-content",
+        "blocks": {
+          "163230013171d30496-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/jojo_720x_540x_08634f6f-eaf1-4461-95e1-afcd6ba07279.png",
+              "width": "50%",
+              "alignment": "bottom-middle"
+            }
+          },
+          "163230013171d30496-0": {
+            "type": "text",
+            "settings": {
+              "title": "On a mission to be your daily, guilt-free indulgence.",
+              "text": "<p>JOJO's is an everyday dose of deliciousness that doesn't force you to choose between a healthy snack and a sweet treat.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left",
+              "headingsize_text": "50px",
+              "headingcolor_text": "#ffffff",
+              "parasize_text": "25px",
+              "paracolor_text": "#3d3d3d"
+            }
+          }
+        },
+        "block_order": [
+          "163230013171d30496-1",
+          "163230013171d30496-0"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "https:\/\/jojoschocolate.com\/blogs\/news",
+          "view-btn": "Visit JOJO's Kitchen",
+          "button-color": "#488d31",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "1632300576baf7d557": {
+        "type": "quotes",
+        "blocks": {
+          "1632300576baf7d557-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I embarked on a low sugar diet, which has now become a lifestyle choice, when I encountered Jojo’s, quite by accident. I have since lost 10 lbs and I enjoy one with a cup of tea, nightly. I look forward to it being my treat for a day if healthy eating. I don’t know what I’d ever do without them.<\/p>",
+              "author": "ANNE W."
+            }
+          },
+          "1632300576baf7d557-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>This chocolate was hands down the best chocolate I have EVER had. It was rich. It was creamy. It was filling. It was satisfying. Every single bite was amazing and so fulfilling. So worth every single penny. I kid you not :)<\/p>",
+              "author": "SUE"
+            }
+          },
+          "1632300576baf7d557-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>This is an awesome product...This chocolate bark stops cravings for sweets and does not irritate my system in any way. Just a small piece is satisfying. This is my second order I'm a very satisfied customer.<br\/><\/p>",
+              "author": "HISSONGBIRD"
+            }
+          },
+          "5505b956-0cbf-4c92-b4da-f28bb87b85ae": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I have tried both flavors and they are equally amazing! As a weight loss surgery patient I am always looking for smarter choices when it comes to sweets. These have exceeded my expectations. I will continue to repurchase these because they are so delicious.<br\/><\/p>",
+              "author": "ELIZABETH W"
+            }
+          },
+          "f66fb891-f2b0-4a56-87d2-f38c212faf54": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>This bark is so much better than anything you will find in the specialty grocery stores- I've tried them all! This product is always fresh and delivered on time, and the customer service is second to none. Try JoJo's! You'll love it!<br\/><\/p>",
+              "author": "HOLLY"
+            }
+          },
+          "732a25f6-de69-4682-b926-201a9f161a9b": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I love this chocolate so much! The peanut butter and chocolate combination is so delicious and the peanuts on top just make it even better. My kids even love it. And I feel good about them eating it because of how healthy it is too! JoJos is my favorite for a healthy and delicious snack.  <\/p>",
+              "author": "NATALIE"
+            }
+          }
+        },
+        "block_order": [
+          "1632300576baf7d557-0",
+          "1632300576baf7d557-1",
+          "1632300576baf7d557-2",
+          "5505b956-0cbf-4c92-b4da-f28bb87b85ae",
+          "f66fb891-f2b0-4a56-87d2-f38c212faf54",
+          "732a25f6-de69-4682-b926-201a9f161a9b"
+        ],
+        "settings": {
+          "title": "Hide from your husband & kids kind of good."
+        }
+      },
+      "1632300579f051f6d7": {
+        "type": "logo-bar",
+        "blocks": {
+          "1632300579f051f6d7-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nosh_18afe1f7-58eb-4017-b00f-1c8e06fd828b.png",
+              "link": ""
+            }
+          },
+          "1632300579f051f6d7-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/guilty-eats.png",
+              "link": ""
+            }
+          },
+          "1632300579f051f6d7-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EatThisNotThat.png",
+              "link": ""
+            }
+          },
+          "1632300579f051f6d7-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/wholefoods.png",
+              "link": ""
+            }
+          },
+          "67ef1c04-be41-4182-936e-4f7108c2857c": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/trendhunter_08ffe5a0-f8f1-4e0d-bc70-105a7b447ea0.png",
+              "link": ""
+            }
+          },
+          "aa3604ef-b286-4018-8a53-0627cbbe6ce4": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sweety-high.png",
+              "link": ""
+            }
+          },
+          "d44f006b-f503-42bd-aab5-e50b06c9c924": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/forbes_16ed7541-b75b-49e7-8caa-a6871feb88cc.png",
+              "link": ""
+            }
+          },
+          "0579c698-553b-4047-81fd-5015ad53b8cf": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new-hope.png",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1632300579f051f6d7-0",
+          "1632300579f051f6d7-1",
+          "1632300579f051f6d7-2",
+          "1632300579f051f6d7-3",
+          "67ef1c04-be41-4182-936e-4f7108c2857c",
+          "aa3604ef-b286-4018-8a53-0627cbbe6ce4",
+          "d44f006b-f503-42bd-aab5-e50b06c9c924",
+          "0579c698-553b-4047-81fd-5015ad53b8cf"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "16323013418345eb32": {
+        "type": "custom-content",
+        "blocks": {
+          "16323013418345eb32-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banners_2048x_1728x_d2c62cb2-c9a9-4387-b433-bf1c2c396d41.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "16323013418345eb32-1"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "",
+          "view-btn": "",
+          "button-color": "#c63663",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "16324015433825831d": {
+        "type": "custom-content",
+        "blocks": {
+          "16324015433825831d-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/b3_1512x_13b5a110-d4cf-441e-a778-80cb6ef965bc.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "16324015433825831d-1"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "",
+          "view-btn": "",
+          "button-color": "#c63663",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "video": {
+        "type": "video",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/0_5e907aab-07fc-4e66-a41a-ae5aadae3c92.jpg",
+          "image_position": "center center",
+          "video_link": "https:\/\/www.youtube.com\/watch?v=rGnB4pcgANY&feature=emb_title",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "medium",
+          "video_title": "",
+          "text_size": "medium"
+        }
+      },
+      "custom-content": {
+        "type": "custom-content",
+        "blocks": {
+          "ee36442d-d245-48e6-983c-b4074199bf2a": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>My mom “Jojo” has always been an inspiration to me. She was radiantly positive and happy no matter what challenges came her way, so when diagnosed with breast cancer she faced it head-on with a smile. <br\/><br\/>Dedicated to living as healthy as possible, she went to work in the kitchen perfecting a delicious, low-sugar, guilt-free chocolate snack that satisfied her sugar cravings.<br\/><br\/>Jojo’s sweet mission lives on to this day, and I’m proud to share her wonderful creation with you that’s as delightful as she was!<br\/><br\/><strong>With love & chocolate,<\/strong><br\/>-her favorite son, Sterling <\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left",
+              "headingsize_text": "25px",
+              "headingcolor_text": "#6d6d6d",
+              "parasize_text": "17px",
+              "paracolor_text": "#6d6d6d"
+            }
+          },
+          "9711cbe4-e87e-483b-bb8b-d0655d1ea74e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0085_720x_720x_56368c00-e425-4f8d-b5fa-a0966d29660a.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "6bb96959-c2be-4e3d-b8ca-1452289701e3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Eat-Chocolate-Be-Happy_2048x_1728x_63affd28-c46a-42fd-ac16-40da8692880c.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "ea1eaf03-f3cd-471d-9055-98e5593579ca": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/jojo_720x_540x_08634f6f-eaf1-4461-95e1-afcd6ba07279.png",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "b1e6fa3f-e2ee-4ccf-b897-45a39faa83ce": {
+            "type": "text",
+            "settings": {
+              "title": "The sweet spot.",
+              "text": "<p><br\/>JOJO’s Chocolate is your everyday dose of deliciousness that doesn’t force you to choose between a healthy snack and a sweet treat. JOJO’s is on a mission to help America consume less sugar and to challenge the way people view chocolate. You CAN eat your chocolate DAILY and not feel guilty about it. Because life is happier with chocolate.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left",
+              "headingsize_text": "56px",
+              "headingcolor_text": "#488d31",
+              "parasize_text": "17px",
+              "paracolor_text": "#6d6d6d"
+            }
+          },
+          "b86aaa8c-7443-4550-9f03-fef450101523": {
+            "type": "text",
+            "settings": {
+              "title": "Honest Ingredients with a purpose.",
+              "text": "<p>We’re clear about what our ingredients are, how we select them, and why they’re so good for you. With premium dark chocolate, high-quality protein, low or no-sugar, we’re giving chocolate lovers a delicious treat, and a healthier way to snack without tradeoffs. Every JOJO’s Chocolate bar is topped with real ingredients that pack nutrients into every bite without all the sugar.<\/p>",
+              "width": "100%",
+              "alignment": "bottom-middle",
+              "align_text": "center",
+              "headingsize_text": "25px",
+              "headingcolor_text": "#488d31",
+              "parasize_text": "17px",
+              "paracolor_text": "#6d6d6d"
+            }
+          },
+          "c1156d26-67f5-4f57-8a5f-aca951d57483": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banners_2048x_1728x_d2c62cb2-c9a9-4387-b433-bf1c2c396d41.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "a9ef3cce-e2d6-402f-bfa7-658fa73e1f42": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>After her cancer diagnosis, Jojo wanted to live healthier, but she craved sweets, more specifically, chocolate. Her options were limited, buy from the candy aisle and feel guilty, or deprive herself of chocolate, which either left her unsatisfied or would lead to binging later on! We believe you shouldn’t feel guilty for enjoying the food you love (and that includes chocolate). We don’t believe in depriving ourselves. We do believe focusing on what we can have empowers us to make healthier choices! Yes, JOJO’s is low-sugar, low-carb, simple & clean ingredients, NON-GMO, Gluten-Free, Lactose-Free, and Soy-Free. But more importantly, it’s DELICIOUS dark chocolate that will help you satisfy your daily sugar cravings.<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center",
+              "headingsize_text": "25px",
+              "headingcolor_text": "#6d6d6d",
+              "parasize_text": "17px",
+              "paracolor_text": "#6d6d6d"
+            }
+          },
+          "1e232a43-7d6c-4bce-9d5d-560a8c3eeedc": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/our-mission_2048x_1512x_2c09556c-fc77-4c88-8a92-47ffd4c5aa32.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "51b49139-232e-4b10-86f5-49322e2ac714": {
+            "type": "text",
+            "settings": {
+              "title": "Dark chocolate is better.",
+              "text": "",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center",
+              "headingsize_text": "46px",
+              "headingcolor_text": "#488d31",
+              "parasize_text": "17px",
+              "paracolor_text": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "ee36442d-d245-48e6-983c-b4074199bf2a",
+          "9711cbe4-e87e-483b-bb8b-d0655d1ea74e",
+          "6bb96959-c2be-4e3d-b8ca-1452289701e3",
+          "ea1eaf03-f3cd-471d-9055-98e5593579ca",
+          "b1e6fa3f-e2ee-4ccf-b897-45a39faa83ce",
+          "b86aaa8c-7443-4550-9f03-fef450101523",
+          "c1156d26-67f5-4f57-8a5f-aca951d57483",
+          "a9ef3cce-e2d6-402f-bfa7-658fa73e1f42",
+          "1e232a43-7d6c-4bce-9d5d-560a8c3eeedc",
+          "51b49139-232e-4b10-86f5-49322e2ac714"
+        ],
+        "settings": {
+          "title": "",
+          "view-btn-link": "",
+          "view-btn": "",
+          "button-color": "#c63663",
+          "button-text-color": "#ffffff"
+        }
+      },
+      "headings": {
+        "type": "headings",
+        "settings": {}
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "e4e767f0-fc4b-421b-8820-64671884598a": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "b4c81e83-f289-42a2-b551-35de33e442bf": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "e4e767f0-fc4b-421b-8820-64671884598a",
+          "b4c81e83-f289-42a2-b551-35de33e442bf"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "bea128e5-32f5-426a-ae41-d3e47ff2a6cd": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/antioxidants_540x_360x_9279af7e-fe11-437a-9356-3e33868fa661.png",
+              "title": "",
+              "text": "<p>Antioxidants are the compounds that are believed to neutralize free radicals and protect the body from their damage.  Dark chocolate lessens cravings for sweet, salty, and fatty foods.  \"Numerous studies show dark chocolate increases blood flow to the heart\" <a href=\"http:\/\/www.sciencedaily.com\/releases\/2010\/03\/100330092809.htm\">German study<\/a>  <\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "3471dd91-a0a4-4e07-acf8-dd094d1af7bc": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/hh_540x_360x_3651f7a1-f95c-4b3a-b1ca-f51fcd114473.png",
+              "title": "",
+              "text": "<p>A study published in 2015 found that not only did dark chocolate <a href=\"https:\/\/draxe.com\/natural-ways-to-lower-blood-pressure\/\"><strong>lower the blood pressure<\/strong><\/a> of the hypertensive diabetics, but it also decreased fasting blood sugar. <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pubmed\/26089927\" title=\"https:\/\/www.ncbi.nlm.nih.gov\/pubmed\/26089927\">(1)<\/a><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "deddf705-34a4-4518-a9a5-08ffc58440c8": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/pfs_540x_360x_304fd4ec-dc50-4be3-8813-28ea1a9fd8ec.png",
+              "title": "",
+              "text": "<p>One of our favorite benefits of dark chocolate is its free radical fighting ability. Antioxidants are the compounds that are believed to neutralize free radicals and protect the body from their damage.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "bea128e5-32f5-426a-ae41-d3e47ff2a6cd",
+          "3471dd91-a0a4-4e07-acf8-dd094d1af7bc",
+          "deddf705-34a4-4518-a9a5-08ffc58440c8"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "68535c42-cea8-4de6-8635-3d05d69015d9": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I embarked on a low sugar diet, which has now become a lifestyle choice, when I encountered Jojo’s, quite by accident. I have since lost 10 lbs and I enjoy one with a cup of tea, nightly. I look forward to it being my treat for a day if healthy eating. I don’t know what I’d ever do without them.<\/p>",
+              "author": "ANNE W."
+            }
+          },
+          "b7beab2a-d990-4724-b572-f15e7c7490fe": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>This chocolate was hands down the best chocolate I have EVER had. It was rich. It was creamy. It was filling. It was satisfying. Every single bite was amazing and so fulfilling. So worth every single penny. I kid you not :)<\/p>",
+              "author": "SUE"
+            }
+          },
+          "4faac43c-058b-4834-b6d2-3b35c54c1bc2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>This is an awesome product...This chocolate bark stops cravings for sweets and does not irritate my system in any way. Just a small piece is satisfying. This is my second order I'm a very satisfied customer.<\/p>",
+              "author": "HISSONGBIRD"
+            }
+          },
+          "ac0a936f-c5aa-408e-aa13-c1148f6f032d": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I have tried both flavors and they are equally amazing! As a weight loss surgery patient I am always looking for smarter choices when it comes to sweets. These have exceeded my expectations. I will continue to repurchase these because they are so delicious.<\/p>",
+              "author": "ELIZABETH W"
+            }
+          },
+          "ea0ce4ac-a556-4a61-8710-da72cbe253a0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>This bark is so much better than anything you will find in the specialty grocery stores- I've tried them all! This product is always fresh and delivered on time, and the customer service is second to none. Try JoJo's! You'll love it!<\/p>",
+              "author": "HOLLY"
+            }
+          },
+          "12e5335c-316f-476d-a434-2441efa8285e": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>I love this chocolate so much! The peanut butter and chocolate combination is so delicious and the peanuts on top just make it even better. My kids even love it. And I feel good about them eating it because of how healthy it is too! JoJos is my favorite for a healthy and delicious snack. <\/p>",
+              "author": "NATALIE"
+            }
+          }
+        },
+        "block_order": [
+          "68535c42-cea8-4de6-8635-3d05d69015d9",
+          "b7beab2a-d990-4724-b572-f15e7c7490fe",
+          "4faac43c-058b-4834-b6d2-3b35c54c1bc2",
+          "ac0a936f-c5aa-408e-aa13-c1148f6f032d",
+          "ea0ce4ac-a556-4a61-8710-da72cbe253a0",
+          "12e5335c-316f-476d-a434-2441efa8285e"
+        ],
+        "settings": {
+          "title": "People ❤ JOJO's"
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "9638a15f-31f4-4a08-81cf-b3ad28b3150a": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Nutrition Facts",
+              "sub_category": "Original",
+              "description": ""
+            }
+          },
+          "5cbd4ea1-ce52-4cbc-9202-b00f835db021": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Nutrition Facts",
+              "sub_category": "Peanut Butter Delight",
+              "description": ""
+            }
+          },
+          "70cf4e2a-3d71-4ed1-abb6-5fd28905ba0b": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Nutrition Facts",
+              "sub_category": "Goes Hawaiian",
+              "description": ""
+            }
+          },
+          "29ecc689-c593-4612-b204-90deba347a91": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Nutrition Facts",
+              "sub_category": "Raspberry Dream",
+              "description": ""
+            }
+          },
+          "1bcad3a2-da9c-4655-a3db-f6843f99562a": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "Is JOJO's dairy free?",
+              "description": "<p>Yes. There is no added dairy. However, it is manufactured in a facility that makes products that contain dairy. <\/p>"
+            }
+          },
+          "4220e273-d31d-4c98-a356-9bd58c9363d0": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "Is JOJO's product Vegan?",
+              "description": "<p>Yes. All of the ingredients are vegan including the protein. We are in the process of obtaining a Vegan certification to include on our new bags.<\/p>"
+            }
+          },
+          "f3fdb5a8-8d86-4a75-84eb-af31c4d759c5": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "Is JOJO's Kosher?",
+              "description": "<p>Our products are not kosher certified however our manufacturing facility is and all of our ingredients are kosher but our actual finished product is not certified.<\/p>"
+            }
+          },
+          "c961691e-ac87-43b5-a788-e324f59f1277": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "Is JOJO's Soy free?",
+              "description": "<p>Why, yes it is! We changed from Soy to Sunflower Lecithin because our goal is to help everyone become healthier-that's why we love JOJO's so much - it satisfies so much quicker so that you don't have those cravings that chocolate loaded with sugar wants you to have!<\/p>"
+            }
+          },
+          "687be742-4e63-411b-b52e-6d2cc3426413": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "Is JOJO's KETO?",
+              "description": "<p>We now have two KETO bars: Goes Hawaiian & Raspberry Dream. They are made with the same protein as the Original and Peanut Butter and are sweetened with Erythritol, so there is no sugar. Our other bars, Original & Peanut Butter Delight are not KETO friendly.<\/p>"
+            }
+          },
+          "8d06b502-109f-498d-a7be-fae863477ed7": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "Is JOJO’s diabetic friendly?",
+              "description": "<p>Yes, all of our bars are diabetic friendly. Our new flavors, Raspberry Dream and Goes Hawaiian, are sugar free - sweetened with an Erythritol\/Stevia blend. Please follow the advice of your healthcare provider though.<\/p>"
+            }
+          },
+          "2561e580-5336-41f4-b5aa-cfad0757bd66": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Dietary Inquiries",
+              "sub_category": "How many Weight Watchers Points does JOJO's have?",
+              "description": "<p>Original: 8 points per serving<br\/><br\/>Peanut Butter Delight: 8 points per serving<br\/><br\/>Raspberry Dream: 6 points per serving<br\/><br\/>Goes Hawaiian: 7 points per serving<\/p>"
+            }
+          },
+          "e812971b-c4a4-4167-a141-274e3bfa1103": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "What is the protein source?",
+              "description": "<p>It is a plant based HEMP protein, which is one of the easier and slower digesting proteins made.  <\/p>"
+            }
+          },
+          "c39f5baf-ffb2-41a1-a238-05043373ddac": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Sourcing Inquiries",
+              "sub_category": "Where are the ingredients sourced?",
+              "description": "<p>The chocolate used for JOJO’s is imported from Germany and the cocoa is sourced from Ecuador.<br\/><br\/>cocoa is sourced from Ecuador.<br\/><br\/>Protein - Sourced in Canada<br\/><br\/>Peanuts - Sourced in Canada<br\/><br\/>Cranberries - Sourced in Canada<br\/><br\/>Raspberries - Sourced in United States<br\/><br\/>Pistachios - Sourced in United States<br\/><br\/>Coconut - Philippines<br\/><br\/>Macadamia Nuts - Processed in Canada<br\/><br\/>Almonds - Processed in Canada<br\/><br\/>Sea Salt - USA<br\/><\/p>"
+            }
+          },
+          "f9dde117-b431-40cf-be8e-aebf2abdd30b": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Sourcing Inquiries",
+              "sub_category": "Where is JOJO’s manufactured?",
+              "description": "<p>It is a Utah based company, manufactured in Canada.<\/p>"
+            }
+          },
+          "fb774a34-730b-4e7b-b97c-2babd4feb2fb": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "Does JOJO’s contain Stevia?",
+              "description": "<p>JOJO’s Goes Hawaiian and JOJO’s Raspberry Dream, contain an Erythritol\/Stevia blend. JOJO’s Original and JOJO’s Peanut Butter Delight are sweetened with Non GMO beet sugar.<\/p>"
+            }
+          },
+          "daeb4862-73af-4ece-88f0-2fd9a27eb3eb": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "Does JOJO’s contain Monkfruit?",
+              "description": "<p>No.<\/p>"
+            }
+          },
+          "6123055e-975b-4735-ae0e-d3df9314b0e2": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "What is JOJO’s sweetened with?",
+              "description": "<p>The new Raspberry Dream and Goes Hawaiian are sweetened with an Erythritol\/Stevia blend. The Original and Peanut Butter Delight bars are sweetened with Non GMO beet sugar.<\/p>"
+            }
+          },
+          "25dbdb1d-bc9e-4c17-8667-0fe5429904ba": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "Are the nuts used in JOJO’s raw?",
+              "description": "<p>The nuts used in JOJO’s are dry roasted.<\/p>"
+            }
+          },
+          "0f48f829-a02d-4563-9e62-574617b6491f": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "Will the hemp protein affect drug testing?",
+              "description": "<p>You would have to eat hundreds of them in a 24 hour period to affect drug testing. Which is a great thing for us, but your tummy might not like it.<\/p>"
+            }
+          },
+          "625596ad-fcf2-4f1b-b769-e98397c3f456": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Ingredient Inquiries",
+              "sub_category": "How much caffeine is in a bar of JOJO’s?",
+              "description": "<p>All chocolate contains caffeine naturally but JOJO’s does not add any additional caffeine to its product. For 1 bar (1.2 oz.) of our Original or Peanut Butter Delight flavors, there is about 25.5 mg of natural caffeine. For 1 bar (1.2 oz.) of our Goes Hawaiian or Raspberry Dream flavors, there is about 20 mg of natural caffeine. <\/p>"
+            }
+          },
+          "250658bf-6806-49d9-87f3-d30f3759f808": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Sourcing Inquiries",
+              "sub_category": "Is JOJO’s local?",
+              "description": "<p>Depending on where you live. It is a Utah based company, with the home office in Sandy.<\/p>"
+            }
+          },
+          "3a52ad60-e8e2-4231-81d5-ce0b7f720f4b": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Other Product Specific Inquiries",
+              "sub_category": "Is your chocolate fair trade?",
+              "description": "<p>Yes. Our chocolate is a 70% dark chocolate imported from Germany. It is sourced from Ecuador and we have been assured that it is fair trade.<\/p>"
+            }
+          },
+          "a7d05b80-c5be-4610-a1d1-f8ad69006493": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Other Product Specific Inquiries",
+              "sub_category": "Is your product Whole30 approved?",
+              "description": "<p>No.<\/p>"
+            }
+          },
+          "ef5797ad-2abf-4f8e-9e00-7860b8d188e6": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Other Product Specific Inquiries",
+              "sub_category": "How many ounces are in one bar of JOJO’s?",
+              "description": "<p>It is a 1.2 oz bar<\/p>"
+            }
+          },
+          "0557f3df-b101-48a2-a138-f872c45248dc": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Other Product Specific Inquiries",
+              "sub_category": "My product came in white, with a weird film on it. What does that mean?",
+              "description": "<p>That means that it has started blooming. Please email <strong>contact@jojoschocolate.com<\/strong> so we can send you a fresh bag.<\/p>"
+            }
+          },
+          "aecfc928-1c56-440f-b575-d976a38fd2ec": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Purchasing Inquiries",
+              "sub_category": "Where can I buy JOJO’s near me?",
+              "description": "<p>JOJO’s is growing and popping up in new retail locations throughout the US. The best way to find out if JOJO’s is in a retailer near you is to use our location search function on our website. Just enter your zip code and you can see if there is a retailer close by <a href=\"https:\/\/jojoschocolate.com\/apps\/store-locator\/\">HERE<\/a>.<\/p>"
+            }
+          },
+          "643f4d8c-0c22-4159-97b7-d82f89e88b79": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Purchasing Inquiries",
+              "sub_category": "Why is JOJO’s so much cheaper at Costco?",
+              "description": "<p>There are a couple of reasons why Costco has a cheaper price. The simplest reason is Costco has a membership, bulk price item (the 14 bar Original bag) that is only sold at Costco. All other retail locations have 7 bar bags and carry other flavors (Peanut Butter Delight, Goes Hawaiian, and Raspberry Dream). Costco only carries our original flavor.<\/p>"
+            }
+          },
+          "45edd189-9dfa-4d23-a425-fab5d7f1eb5d": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Purchasing Inquiries",
+              "sub_category": "How do I cancel my subscription?",
+              "description": "<p>We can cancel that for you if you would like, please email <strong>contact@jojoschocolate.com<\/strong> or you can cancel it on our website by logging in to your account. We would love your feedback on why you are canceling and if there were any issues with our chocolate.<\/p>"
+            }
+          },
+          "13db2a7c-e930-495d-a477-40056fd20517": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Purchasing Inquiries",
+              "sub_category": "Do we offer free samples?",
+              "description": "<p>We don’t currently offer free samples online. <\/p>"
+            }
+          },
+          "49e25c7e-ab40-47b9-97c9-1bf09a58e15b": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Packaging\/Storage Inquiries",
+              "sub_category": "How does JOJO’s pack their chocolate to prevent it from melting?",
+              "description": "<p>In summer months, we use styrofoam to keep the box insulated and a few ice packs in each box to prevent chocolate from melting. Please contact us if you ever receive chocolate that melted during transit.<\/p>"
+            }
+          },
+          "e735b34c-571a-4935-8891-a361e7cc9e2d": {
+            "type": "FAQ",
+            "settings": {
+              "category": "Packaging\/Storage Inquiries",
+              "sub_category": "Should I keep JOJO’s in my refrigerator?",
+              "description": "<p>You do not have to keep JOJO’s refrigerated, but it will last longer if you keep it cool. Try it frozen! Yummy!<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "9638a15f-31f4-4a08-81cf-b3ad28b3150a",
+          "5cbd4ea1-ce52-4cbc-9202-b00f835db021",
+          "70cf4e2a-3d71-4ed1-abb6-5fd28905ba0b",
+          "29ecc689-c593-4612-b204-90deba347a91",
+          "1bcad3a2-da9c-4655-a3db-f6843f99562a",
+          "4220e273-d31d-4c98-a356-9bd58c9363d0",
+          "f3fdb5a8-8d86-4a75-84eb-af31c4d759c5",
+          "c961691e-ac87-43b5-a788-e324f59f1277",
+          "687be742-4e63-411b-b52e-6d2cc3426413",
+          "8d06b502-109f-498d-a7be-fae863477ed7",
+          "2561e580-5336-41f4-b5aa-cfad0757bd66",
+          "e812971b-c4a4-4167-a141-274e3bfa1103",
+          "c39f5baf-ffb2-41a1-a238-05043373ddac",
+          "f9dde117-b431-40cf-be8e-aebf2abdd30b",
+          "fb774a34-730b-4e7b-b97c-2babd4feb2fb",
+          "daeb4862-73af-4ece-88f0-2fd9a27eb3eb",
+          "6123055e-975b-4735-ae0e-d3df9314b0e2",
+          "25dbdb1d-bc9e-4c17-8667-0fe5429904ba",
+          "0f48f829-a02d-4563-9e62-574617b6491f",
+          "625596ad-fcf2-4f1b-b769-e98397c3f456",
+          "250658bf-6806-49d9-87f3-d30f3759f808",
+          "3a52ad60-e8e2-4231-81d5-ce0b7f720f4b",
+          "a7d05b80-c5be-4610-a1d1-f8ad69006493",
+          "ef5797ad-2abf-4f8e-9e00-7860b8d188e6",
+          "0557f3df-b101-48a2-a138-f872c45248dc",
+          "aecfc928-1c56-440f-b575-d976a38fd2ec",
+          "643f4d8c-0c22-4159-97b7-d82f89e88b79",
+          "45edd189-9dfa-4d23-a425-fab5d7f1eb5d",
+          "13db2a7c-e930-495d-a477-40056fd20517",
+          "49e25c7e-ab40-47b9-97c9-1bf09a58e15b",
+          "e735b34c-571a-4935-8891-a361e7cc9e2d"
+        ],
+        "settings": {}
+      },
+      "term-heading-paragraph": {
+        "type": "term-heading-paragraph",
+        "settings": {
+          "full_width": false,
+          "section_title": "",
+          "text": "",
+          "text_size": "small"
+        }
+      },
+      "term-heading-paragraph2": {
+        "type": "term-heading-paragraph2",
+        "settings": {
+          "full_width": false,
+          "section_title": "SECTION 1 - ONLINE STORE TERMS",
+          "text": "<p><br\/>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.<br\/><br\/>You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).<br\/><br\/>You must not transmit any worms or viruses or any code of a destructive nature.<br\/><br\/>A breach or violation of any of the Terms will result in an immediate termination of your Services.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "contact-form": {
+        "type": "contact-form",
+        "settings": {
+          "image_bg": "shopify:\/\/shop_images\/contact-us_800x1440_800x1440_fd03f918-9c93-4615-a756-db30c3f629fe.png",
+          "text": "<p>We'd love to hear from you or help in any way we can!<br\/>If you need us right away, please give us a call <strong>(805) 395-6567<\/strong>.<br\/>Otherwise, we will do our very best to get back to you within 1 day.<\/p>"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "title": "You may also like",
+          "subtitle": "",
+          "section_style": "",
+          "rows": "1",
+          "desktop_grid": "4",
+          "mobile_grid": "2",
+          "slider_related_products": true,
+          "autoplay": true,
+          "dots": false,
+          "arrows": true,
+          "autoplayspeed": 5
+        }
+      },
+      "drawer": {
+        "type": "drawer",
+        "settings": {}
+      },
+      "mobile-header": {
+        "type": "mobile-header",
+        "settings": {}
+      },
+      "product_custom_template": {
+        "type": "product_custom_template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      }
+    },
+    "content_for_index": [
+      "1631885842f763354f",
+      "163212653651c2fd62",
+      "1632300079c6bc84d9",
+      "163230013171d30496",
+      "1631890185be22b33b",
+      "16318897133fe65f4a",
+      "1632300576baf7d557",
+      "1632300579f051f6d7",
+      "16322303567de85999",
+      "16323013418345eb32",
+      "163223066062506915",
+      "16324015433825831d"
+    ],
+    "blocks": {
+      "1633002158e98300da": {
+        "type": "shopify:\/\/apps\/contact-us-form-with-captcha\/blocks\/app-embed\/a9c778db-ef3e-4d3b-8775-c01d242fd46f",
+        "disabled": false,
+        "settings": {}
+      },
+      "163350659390f6819b": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "1633506593bada7f96": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+          "position": "right"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

@@ -1,0 +1,164 @@
+<header class="mobile-header">
+  <div class="mobile-headercontainer">
+    <div class="mobi_one">
+      <ul class="list-inline">
+        <li>
+          <span style="cursor:pointer" onclick="openNav()">&#9776;</span> 
+        </li>
+        <li>
+          <a href="{{ routes.account_login_url }}">
+            <span class="fas fa-user fa-fw" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobitwo">
+     <div class="centermobilelogo">
+        <a href="{{ routes.root_url }}" class="site-header__logo-image{% if section.settings.align_logo == 'center' %} site-header__logo-image--centered{% endif %}" data-image-loading-animation>
+          <img class="mobilelogo"
+               src="https://cdn.shopify.com/s/files/1/1370/4467/files/3e4f0ba8-3dc7-4824-94a4-6f530756457a.png?v=1636055856"
+               />
+        </a>
+      </div>
+    </div>
+    <div class="mobifour">
+      <ul class="list-inline">
+        <li style="display:none">
+          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top customDrawerClick" data-predictive-search-open-drawer>
+            {% include 'icon-search' %}
+            <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+          </button>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="site-header__icon site-header__cart" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false">
+            {% include 'icon-cart' %}
+            <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+            <div id="CartCount" style="opacity:0" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %} critical-hidden" data-cart-count-bubble>
+              <span data-cart-count>{{ cart.item_count }}</span>
+              <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+            </div>
+            {% if cart.item_count != 0 %}
+            <div class="cartAnimateIcon">
+              <i class="animate__animated animate__rubberBand"></i>
+            </div>
+            {% endif %}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</header>
+<div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
+
+  <div id="mySidenav" class="sidenav">
+    <div class="drawer_header">
+      <div class="pull-left">
+        <i class="fas fa-bars"></i> Menu
+      </div>
+      <div class="pull-right">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <ul class="site-nav list--inline" id="SiteNav">
+
+
+
+
+
+      <li>
+        <a href="https://jojoschocolate.com/collections/flavors" class="site-nav__link site-nav__link--main">
+          <span class="site-nav__label">Shop Our Flavors</span>
+        </a>
+      </li>
+      
+      
+      
+
+		<li>
+        <a href="https://jojoschocolate.com/apps/bundles/bundle/92333" class="site-nav__link site-nav__link--main">
+          <span class="site-nav__label">Build A Bundle</span>
+        </a>
+      </li>
+      
+        <li>
+        <a href="https://jojoschocolate.com/products/jojos-holiday-gift-cards" class="site-nav__link site-nav__link--main">
+          <span class="site-nav__label">Gift Cards</span>
+        </a>
+      </li>
+
+
+
+      <li>
+        <a href="https://jojoschocolate.com/pages/jojos-story" class="site-nav__link site-nav__link--main">
+          <span class="site-nav__label">Our Story</span>
+        </a>
+      </li>
+
+
+
+
+      <li>
+        <a href="https://jojoschocolate.com/pages/find-us-in-store" class="site-nav__link site-nav__link--main">
+          <span class="site-nav__label">Find JOJO’s</span>
+        </a>
+      </li>
+
+
+
+
+      <li>
+        <a href="https://jojoschocolate.com/pages/faq" class="site-nav__link site-nav__link--main">
+          <span class="site-nav__label">FAQ</span>
+        </a>
+      </li>
+
+
+    </ul>
+    <div class="accountmenu">
+      <ul class="list-unstyled">
+        <li>
+          <a href="{{ routes.account_login_url }}">
+            <span class="fas fa-sign-in-alt fa-fw"></span>
+            Log In
+          </a>
+        </li>
+        <li>
+          <a href="{{ routes.account_login_url }}">
+            <span class="fas fa-user-plus fa-fw"></span>
+            Create Account
+          </a>
+        </li>
+        <li class="spacer"></li>
+        <li>
+          <a href="/pages/contact-us">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="/pages/terms-of-service">
+            Terms of Service
+          </a>
+        </li>
+        <li>
+          <a href="/pages/privacy-policy">
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Section name",
+"settings": []
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

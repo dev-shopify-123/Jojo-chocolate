@@ -1,0 +1,423 @@
+{% include 'product-content.zipifypages', contentprt: 'header' %}<style>
+  .wrapper-product-single{
+    max-width: unset;
+  }
+  .product-single__photo--container {
+    max-width: 75% !important;
+}
+  .product-single__thumbnails .slick-list{
+  	width: 75%;
+    margin: 0 auto!important;
+  }
+  .custom-pd{
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(0,0,0,0.15);
+    border-radius: 24px;
+  }
+  .custom-pp{
+    width:50%
+  }
+  .product-single__meta{
+    padding: 1rem 2.5rem 3rem 1.5rem;
+  }
+  .product-single__meta h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .price-wrapper {
+    font-family: futura,sans-serif;
+    
+  }
+  .price-wrapper span {
+    margin:0 auto;
+    
+  }
+  #AddToCartForm--product-template{
+    text-transform: uppercase;
+  }
+  .product-form__input, .qty-input{
+    font-weight: 700
+  }
+  .product-single__add-to-cart{
+    width: 45%;    
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  #AddToCart--product-template{
+    height: 100px;
+    margin: 25px 0px 40px;
+  }
+  .product-tags{
+    display:none;
+  }
+  .social-sharing{
+    text-align: center;
+    margin-top: 50px;
+  }
+  #productRecommendationsSection .grid__item{
+    padding: 2rem;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(0,0,0,0.15);
+    margin-bottom: 50px;
+    height: 400px
+  }
+  #productRecommendationsSection .grid-product__image-wrapper a{
+    padding: 0rem 3.5rem;
+    height: 250px;
+  }
+  .grid-product__title{
+  	font-size: 1rem;
+    padding: 0 2rem;
+    margin: -50px 0 50px;
+  }
+  .grid-product__price{
+    margin-bottom:unset;
+    font-family: Futura, sans-serif;
+    font-weight: 700;
+    margin: -25px 0 25px;
+  }
+  .grid-product__price-wrap{
+    margin: -25px 0 25px;
+  }
+  #productRecommendationsSection .tag-wrapper.tag-top-left{
+    top: -10px;
+    left: -10px;
+  }
+  #shopify-section-related-product .grid-product {
+  	/*padding: 2rem;*/
+    background: #fff;
+    /*border-radius: 24px;
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(0,0,0,0.15);*/
+    margin-bottom: 50px;
+    height: 400px;
+    padding-left: unset;
+  }
+  #shopify-section-related-product .grid-product__wrapper .grid-product__image-wrapper{
+    padding: 1.5rem 3rem;
+  }
+  #shopify-section-related-product .grid-product__meta{
+        margin: 25px 0px;
+  }
+  .btn--banner,
+  #shopify-section-product-summer p strong{
+    color: #488d31;
+  }
+  #shopify-section-product-summer p{
+    margin-left: -75px;
+    max-width: 550px;
+  }
+  #shopify-section-product-summer p:first-child,
+  #shopify-section-product-summer p:last-child{
+  margin-left: -100px;
+}
+  #shopify-section-product-summer img{
+  border-radius: 360px;
+    width: 350px;
+    height: 350px;
+    margin-top: 125px;
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(0,0,0,0.15);
+  }
+  #shopify-section-product-summer .box{
+  	padding-top: unset;
+    padding-bottom: unset;
+  }
+  .product-summer-heading{
+    text-align: center;
+    max-width: 750px;
+    margin: 60px auto -70px;
+  }
+  
+  @media screen and (max-width: 767px) {
+  .custom-pp{
+    width: 100%;
+  }
+   .custom-pd{
+    width: 100%;
+     margin-top: 30px;
+  }
+   .product-wrapper{
+     margin: 0 auto;
+   }
+    #shopify-section-product-summer img {
+    width: 200px;
+    height: 200px;
+    margin-top: 75px;
+}
+    #shopify-section-product-summer .rte{
+    margin: -50px auto 0px;
+    }
+    #shopify-section-product-summer p{
+      margin-left: 0px!important;
+    }
+    .content-copy{
+      margin: 0 auto;
+    }
+    .product-single__add-to-cart{
+      width: unset;
+    }
+    .product-single__description ul{
+      margin:unset;
+}
+  } 
+ 
+  @media screen and (max-width: 990px) and (min-width: 768px) {
+  .custom-pp{
+    width: 100%;
+  }
+   .custom-pd{
+    width: 100%;
+     margin-top: 30px;
+  }
+   .product-wrapper{
+     margin: 0 auto;
+   }
+    #shopify-section-product-summer img {
+    width: 200px;
+    height: 200px;
+    margin-top: 75px;
+}
+    #shopify-section-product-summer .rte{
+    margin: -540px auto 0px;
+    }
+    #shopify-section-product-summer p{
+      margin-left: 0px!important;
+      max-width: 650px
+    }
+    .content-copy{
+      margin: 0 auto;
+    }
+    .product-single__add-to-cart{
+      width: unset;
+    }
+    .product-single__description ul{
+      margin:unset;
+    }
+    #shopify-section-product-original-description{
+      /*margin-top: -300px;*/
+    }
+    #relatedProductSection .slick-list {
+      height:550px!important;
+      margin: 100px;
+    }
+    #shopify-section-product-summer{
+      height: 600px;
+    }
+    
+  }
+  
+  .bg-image {
+        background-image: url(https://cdn.shopify.com/s/files/1/1370/4467/files/bg.jpg?v=1581701351);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 2.5rem;
+    }
+
+    .ingredients {
+        max-width: 1080px;
+        margin: 2.5rem auto;
+    }
+
+    .ingredients-topheading {
+        padding: 5rem;
+        background-color: #48a23f
+;
+    }
+
+    .ingredients-topheading h2,
+    .ingredients-topheading h4,
+    .ingredients-topheading p{
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .ingredients-topheading h2 {
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .ingredients-topheading img {
+      display: block;
+      margin: 0 auto;
+      width: 75%;
+    }
+
+    .ingredients--keeper p {
+        margin: 30px 0px;
+        line-height: 28px;
+    }
+
+    .ingredients-body ul {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .ingredients-body li {
+        /*width: 12%;*/
+        width: 22%;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+    }
+
+    .ingredients-body li img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ingredients-content-body h2 {
+        color: #48a23f;
+        text-align: center;
+        padding: 1.5rem 0rem;
+        text-transform: uppercase;
+    }
+  .ingredients-content-body ul li h4{
+  		color:#48a23f;		
+  }
+
+    .ingredients-content-body ul li {
+        width: 40%;
+        display: inline-block;
+        padding: 0px 15px;
+        text-align: center;
+        margin: 0 auto;
+        vertical-align: top;
+        list-style: none;
+    }
+  .ingredients-content-body ul{
+  text-align: center;
+  }
+@media screen and (max-width: 767px) {
+   .ingredients-content-body ul li {
+        width: 80%;
+       display: inline;
+  }
+  .ingredients-topheading {
+     padding: 2.5rem 0.5rem;
+    }
+  .ingredients-content-body h2{
+    padding: 1.5rem 0.5rem;
+  }
+  .bg-image {
+    padding-bottom: .5rem;
+  }
+  .ingredients-content-body ul{
+    margin: 0 17px;
+  }
+    label.rc_label {
+    font-size: 14px;!important
+  }
+  #rc_container{
+    margin: 0px -15px;
+  }
+  div.rc_block__type {
+    width: 115%!important;
+  }
+}
+  
+  .product-single__description.rte>:last-child,
+  .product-single__description.rte p:nth-last-child(2){
+    display: none;
+  }
+  .social-sharing{
+  	display: none;
+  }
+  .plant-based{
+    margin: 0 auto;
+    width: 260px;
+    height: 5.5rem;
+    background: #488d31;
+    border-radius: 3px;    
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .plant-based:hover{
+    background: #90ba83;
+  }
+  .plant-based a{
+    color: #fff;
+    font-family: Raleway,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: initial;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    line-height: 1.5;
+    text-align: center;    
+  }
+  .plant-based span{
+    display: block;
+    margin: 0 auto;
+  }
+  .plant{
+  	padding-top: 20px;
+    font-size: 17px;
+  }
+  .linkto{    
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .learn-more{
+    color:#48a23f
+  }
+  .rc_popup__block__footer{
+    display: none;
+  }
+  
+</style>
+<!-- /templates/product.liquid -->
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+<div itemscope itemtype="http://schema.org/Product" style="margin-bottom:20px;">
+  {% section 'product-template' %}  
+
+  {% include 'product-details-thirds', 
+    primary_color: '#48a23f', 
+    white_bg: false, 
+    index: 0,
+    title_1: 'SATISFY CRAVINGS',
+    content_1: '8.4oz resealable bag with 7 dark chocolate bars; the first ever healthy dark chocolate bar with added plant-based protein', 
+    title_2: 'GUILT-FREE',
+    content_2: '8G Sugar | 8G Net Carbs | 5G Protein | 180 Calories per serving', 
+    title_3: 'LOW SUGAR',
+    content_3: "Always low-sugar and low carb; JOJO’s Dark Chocolate is so delicious you won't believe it's low-sugar", 
+    title_4: 'HONEST INGREDIENTS',
+    content_4: '70% Dark Chocolate, Pistachios, Almonds & Cranberries + Plant-based protein', 
+    title_5: 'EVERYTHING YOU WANT',
+    content_5: 'Certified Gluten Free, NON-GMO, Soy Free, Lactose Free, Paleo, Vegan & Keto Friendly', %}  
+  
+  {% section 'product-recommendations' %}
+  
+  {% if settings.review_widget == 'review_widget_above' %}
+    {% include 'review-widget' %}
+  {% endif %}
+  
+  {% section 'product-original-description' %}
+
+  {% if settings.review_widget == 'review_widget_under' %}
+    {% include 'review-widget' %}
+  {% endif %}
+
+  {% section 'related-product' %}
+
+  <div class="back-box">
+    <a href="https://jojoschocolate.com/collections/flavors" class="btn btn--banner">
+      <span class="fas fa-arrow-left" aria-hidden="true"> Back to Flavors! </span>        
+    </a>
+  </div>
+
+  {% section 'product-summer' %}
+</div>
+
+{% render 'product_infox' %}
+{% include 'product-content.zipifypages', contentprt: 'footer' %}

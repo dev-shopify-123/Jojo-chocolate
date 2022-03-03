@@ -1,0 +1,137 @@
+ <div class="w3-show-inline-block">
+   
+   
+   
+   <div class="selecter">
+       
+       
+       {% form 'product', product, data-productid: product.id, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+    <!-- here start -->
+      <!-- Begin ReCharge code -->
+      {% if product.available %}{% render 'subscription-product' with product as product %}{% endif %}
+      <!-- End ReCharge code -->
+      <!-- hereend -->
+
+      {% unless product.has_only_default_variant %}
+      <div class="product-form__controls-group">
+        {% for option in product.options_with_values %}
+        <div class="selector-wrapper js product-form__item">
+          <label for="SingleOptionSelector-{{ forloop.index0 }}">
+            {{ option.name }}
+          </label>
+          <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input"
+                  id="SingleOptionSelector-{{ forloop.index0 }}"
+                  data-index="option{{ forloop.index }}"
+                  >
+            {% for value in option.values %}
+            <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        {% endfor %}
+      </div>
+      {% endunless %}
+       
+       <select name="id" data-productid="{{ product.id }}" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+        {% for variant in product.variants %}
+        <option value="{{ variant.id }}"
+                {%- if variant == current_variant %} selected="selected" {%- endif -%}
+                >
+          {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                </option>
+        {% endfor %}
+      </select>
+       
+    
+
+    </div>
+   
+  <div class="w3-bar">
+    
+     
+       <div class="product__price">
+          {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+          </div>
+      <div class="product-form__controls-group">
+        <div class="product-form__item">
+          <input type="number" id="Quantity-{{ section.id }}"
+                 name="quantity" value="1" min="1" pattern="[0-9]*"
+                 class="product-form__input product-form__input--quantity customQTYSet" data-quantity-input
+                 >
+          <div class="qtybtnSetup">
+            <p><a href="javascript:void(0)" onclick="increamentQTY()">
+              +
+              </a></p>
+            <p><a href="javascript:void(0)"  onclick="decreamentQTY()">
+              -
+              </a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-form__controls-group product-form__controls-group--submit">
+        <div class="product-form__item product-form__item--submit
+                    {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+                    {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+             >
+          <input type="hidden" pack="" variantID='{{ product.variants.first.id }}' interval_freq='1' class="hidden-val">
+          <button type="submit" name="add"
+                  {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+                  aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                  class="btn custom_add product-form__cart-submit{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary-accent{% endif %}"
+                  {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+                  data-add-to-cart>
+            <span data-add-to-cart-text>
+              {% unless current_variant.available %}
+              {{ 'products.product.sold_out' | t }}
+              {% else %}
+              <i class="fas fa-shopping-bag"></i> {{ 'products.product.add_to_cart' | t }}
+              {% endunless %}
+            </span>
+            <span class="hide" data-loader>
+              {% include 'icon-spinner' %}
+            </span>
+          </button>
+          {% if section.settings.enable_payment_button %}
+          {{ form | payment_button }}
+          {% endif %}
+        </div>
+      </div>    
+         {% endform %}
+    </div> 
+
+  </div>
+  
+   
+ 
+<style>
+ .col-md-6.ReChargeMobile {
+    width: 80%;
+}
+  .product-form__item {
+    flex-grow: 0;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+}
+  
+.product-form__controls-group {
+    width: 18%;
+    float: revert;
+    padding: 0 0;
+} 
+.product-form__controls-group.product-form__controls-group--submit {
+    width: 70%;
+    margin-top: 0;
+    margin-left: 11px!important;
+}
+
+.w3-bar {
+    display: flex;
+}
+ .product__price {
+    font-size: 1.25em;
+    margin: 0px -9px;
+ }
+ 
+</style>

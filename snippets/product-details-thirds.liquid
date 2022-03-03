@@ -1,0 +1,40 @@
+<section class="product-details-thirds product-details-thirds-{{ index }} jojo-card">
+    <div class="product-details-thirds__content jojo-card__content">
+        <div class="product-details-thirds__column">
+            <span class="product-details-thirds__column-title">{{ title_1 }}</span>
+            <span class="product-details-thirds__column-body">{{ content_1 }}</span>
+        </div>
+        <div class="product-details-thirds__column">
+            <span class="product-details-thirds__column-title">{{ title_2 }}</span>
+            <span class="product-details-thirds__column-body">{{ content_2 }}</span>
+        </div>
+        <div class="product-details-thirds__column">
+            <span class="product-details-thirds__column-title">{{ title_3 }}</span>
+            <span class="product-details-thirds__column-body">{{ content_3 }}</span>
+        </div>
+        <div class="product-details-thirds__column">
+            <span class="product-details-thirds__column-title">{{ title_4 }}</span>
+            <span class="product-details-thirds__column-body">{{ content_4 }}</span>
+        </div>
+        <div class="product-details-thirds__column">
+            <span class="product-details-thirds__column-title">{{ title_5 }}</span>
+            <span class="product-details-thirds__column-body">{{ content_5 }}</span>
+        </div>
+    </div>
+    <style>
+        {% if white_bg %}
+          .product-details-thirds-{{index}} {
+            background: #fff;
+            color: {{primary_color}};
+          }
+          .product-details-thirds-{{index}} .product-details-thirds__column-body{
+             color: #515151;
+           }
+        {% else %}
+          .product-details-thirds-{{index}} {
+            background: {{primary_color}};
+            color: #fff;
+          }
+        {% endif %}
+    </style>
+</section>

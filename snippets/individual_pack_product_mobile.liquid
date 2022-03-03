@@ -1,0 +1,56 @@
+<a class="btn btn-primary packmobile_product_button" role="button" data-toggle="modal" data-target="#customModal">
+  <div class="packmobile_product_holder">
+    <div class="row">
+      <div class="col-md-3">
+        {% if product.metafields.my_fields.individual_product_one_color and product.metafields.my_fields.individual_product_one_url %}
+        <div class="packmobile_product_color" style="background:{{ product.metafields.my_fields.individual_product_one_color }}"></div>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        <p>Choose your flavor</p>
+        <p>{{ product.metafields.my_fields.individual_product_one_title }}</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</a>
+
+<div class="collapse individual_pack_product_holder" style="display:none" id="collapseExample">
+  <div class="well">
+    <div class="row">
+      <div class="col-50">
+        <h4>Choose Your Flavor</h4>
+      </div>
+      <div class="col-50 text-right">
+        <a href="javascript:void(0)" id="closeWell">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+    </div>
+    {% include "individual_pack_product" %}
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade customModal" id="customModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content animate-bottom">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Choose Your Flavor</h4>
+      </div>
+      <div class="modal-body">
+        {% include "individual_pack_product" %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $("document").ready(function(){
+    $("#closeWell").click(function(){
+      $("#collapseExample").removeClass("in");
+    });
+  });
+</script>
+

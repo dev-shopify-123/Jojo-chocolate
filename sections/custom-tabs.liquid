@@ -1,0 +1,62 @@
+{% schema %}
+  {
+    "name": "Custom Tabs",
+	"class": "index-section",
+    "settings": [
+		{
+			"type" : "text",
+			"label" : "Tab Name",
+			"id" : "tab_name"
+		}
+	],
+	"blocks": [
+    {
+      "type": "text",
+      "name": "Tabs",
+      "settings": [
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Add Title"
+        },
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": "Add Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "images_one",
+          "label": "Add Image One"
+        },
+        {
+          "type": "image_picker",
+          "id": "images_two",
+          "label": "Add Image Two"
+        },
+        {
+          "type": "image_picker",
+          "id": "images_three",
+          "label": "Add Image Three"
+        }
+      ]
+    }
+    ],
+	"presets": [
+		{
+			"name": "Custom Tabs",
+			"blocks": [
+              {
+              	"type": "text"
+              }
+			]
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

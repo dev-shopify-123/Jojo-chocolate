@@ -1,0 +1,46 @@
+<section style="background: url('https://cdn.shopify.com/s/files/1/1370/4467/files/bg_a31b33df-03f7-4084-95c1-a4ce49085c5d.jpg?v=1584048806') center center no-repeat;padding: 100px 0px;background-size: cover;margin: -90px 0px;">
+  <h2>{{section.settings.heading}}</h2>
+  <p>
+   <img src="{{section.settings.up_image| img_url: 'master' }}"> 
+  </p>
+
+
+</section>
+
+{% schema %}
+ {
+ 	"name": "Image & text with bg",
+ 	"settings": [ 
+		{
+ 			"type": "text",
+ 			"label": "Heading",
+ 			"id": "heading"
+ 		},
+ 		{
+ 			"type": "image_picker",
+ 			"label": "uploading section Background image here",
+ 			"id": "center_image"
+ 		},
+ 		{
+ 			"type": "image_picker",
+ 			"label": "uploading your image here",
+ 			"id": "up_image"
+ 		}
+
+ 	],
+    "presets": [
+        {
+            "name": "Image with text and Bg",
+            "category": "ADVANCED LAYOUT"
+        }
+    ]
+
+
+ }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

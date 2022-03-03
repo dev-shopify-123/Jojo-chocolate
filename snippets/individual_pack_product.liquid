@@ -1,0 +1,229 @@
+<br />
+<div class="padd-15 productcolors">
+  <div class="row">
+    <div class="col-md-6">
+      {% if product.metafields.my_fields.individual_product_one_color and product.metafields.my_fields.individual_product_one_url %}
+      <h4>INDIVIDUAL FLAVORS</h4>
+      <ul class="list-inline">
+        {% if product.metafields.my_fields.individual_product_one_color and product.metafields.my_fields.individual_product_one_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.individual_product_one_url }}">
+            <div style="background:{{ product.metafields.my_fields.individual_product_one_color }}"></div>
+            <p>{{ product.metafields.my_fields.individual_product_one_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.individual_product_two_color and product.metafields.my_fields.individual_product_two_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.individual_product_two_url }}">
+            <div style="background:{{ product.metafields.my_fields.individual_product_two_color }}"></div>
+            <p>{{ product.metafields.my_fields.individual_product_two_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.individual_product_three_color and product.metafields.my_fields.individual_product_three_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.individual_product_three_url }}">
+            <div  style="background:{{ product.metafields.my_fields.individual_product_three_color }}"></div>
+            <p>{{ product.metafields.my_fields.individual_product_three_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.individual_product_four_color and product.metafields.my_fields.individual_product_four_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.individual_product_four_url }}">
+            <div style="background:{{ product.metafields.my_fields.individual_product_four_color }}"></div>
+            <p>{{ product.metafields.my_fields.individual_product_four_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        <br>
+          {% if product.metafields.my_fields.individual_product_five_color and product.metafields.my_fields.individual_product_five_url %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.individual_product_five_url }}">
+                    <div style="background:{{ product.metafields.my_fields.individual_product_five_color }}"></div>
+                    <p>{{ product.metafields.my_fields.individual_product_five_title }}</p>
+                  </a>
+              	</li>
+              
+              {% endif %}
+      </ul>
+      {% endif %}
+      {% if product.metafields.my_fields.packs_product_one_url and product.metafields.my_fields.packs_product_one_img %}
+      <br /><br />
+      <h4>PACKS</h4>
+      <ul class="list-inline packsset">
+        {% if product.metafields.my_fields.packs_product_one_url and product.metafields.my_fields.packs_product_one_img %}
+        <li>
+          <a href="{{ product.metafields.my_fields.packs_product_one_url }}">
+            <img src="{{ product.metafields.my_fields.packs_product_one_img | img_url : "1000x" }}" />
+            <p>{{ product.metafields.my_fields.packs_product_one_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.packs_product_two_url and product.metafields.my_fields.packs_product_two_img %}
+        <li>
+          <a href="{{ product.metafields.my_fields.packs_product_two_url }}">
+            <img src="{{ product.metafields.my_fields.packs_product_two_img | img_url : "1000x" }}" />
+            <p>{{ product.metafields.my_fields.packs_product_two_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.packs_product_three_url and product.metafields.my_fields.packs_product_three_img %}
+        <li>
+          <a href="{{ product.metafields.my_fields.packs_product_three_url }}">
+            <img src="{{ product.metafields.my_fields.packs_product_three_img | img_url : "1000x" }}" />
+            <p>{{ product.metafields.my_fields.packs_product_three_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.packs_product_four_url and product.metafields.my_fields.packs_product_four_img %}
+        <li>
+          <a href="{{ product.metafields.my_fields.packs_product_four_url }}">
+            <img src="{{ product.metafields.my_fields.packs_product_four_img | img_url : "1000x" }}" />
+            <p>{{ product.metafields.my_fields.packs_product_four_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+      {% if product.metafields.my_fields.seasonal_product_one_color and product.metafields.my_fields.seasonal_product_one_url %}
+      <br /><br />
+      <h4>SEASONAL</h4>
+      <ul class="list-inline packsset packsseasonal">
+        {% if product.metafields.my_fields.seasonal_product_one_color and product.metafields.my_fields.seasonal_product_one_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.seasonal_product_one_url }}">
+            <div style="background:{{ product.metafields.my_fields.seasonal_product_one_color }}"></div>
+            <p>{{ product.metafields.my_fields.seasonal_product_one_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.seasonal_product_two_color and product.metafields.my_fields.seasonal_product_two_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.seasonal_product_two_url }}">
+            <div style="background:{{ product.metafields.my_fields.seasonal_product_two_color }}"></div>
+            <p>{{ product.metafields.my_fields.seasonal_product_two_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.seasonal_product_three_color and product.metafields.my_fields.seasonal_product_three_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.seasonal_product_three_url }}">
+            <div  style="background:{{ product.metafields.my_fields.seasonal_product_three_color }}"></div>
+            <p>{{ product.metafields.my_fields.seasonal_product_three_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+        {% if product.metafields.my_fields.seasonal_product_four_color and product.metafields.my_fields.seasonal_product_four_url %}
+        <li>
+          <a href="{{ product.metafields.my_fields.seasonal_product_four_url }}">
+            <div style="background:{{ product.metafields.my_fields.seasonal_product_four_color }}"></div>
+            <p>{{ product.metafields.my_fields.seasonal_product_four_title }}</p>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="col-md-6 ReChargeMobile">
+
+  
+
+      {% form 'product', product, data-productid: product.id, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+    <!-- here start -->
+      <!-- Begin ReCharge code -->
+      {% if product.available %}{% render 'subscription-product' with product as product %}{% endif %}
+      <!-- End ReCharge code -->
+      <!-- hereend -->
+
+      {% unless product.has_only_default_variant %}
+      <div class="product-form__controls-group">
+        {% for option in product.options_with_values %}
+        <div class="selector-wrapper js product-form__item">
+          <label for="SingleOptionSelector-{{ forloop.index0 }}">
+            {{ option.name }}
+          </label>
+          <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input"
+                  id="SingleOptionSelector-{{ forloop.index0 }}"
+                  data-index="option{{ forloop.index }}"
+                  >
+            {% for value in option.values %}
+            <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        {% endfor %}
+      </div>
+      {% endunless %}
+
+      <select name="id" data-productid="{{ product.id }}" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+        {% for variant in product.variants %}
+        <option value="{{ variant.id }}"
+                {%- if variant == current_variant %} selected="selected" {%- endif -%}
+                >
+          {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                </option>
+        {% endfor %}
+      </select>
+		<div class="product__price">
+            {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+          </div>
+      <div class="product-form__controls-group">
+        <div class="product-form__item">
+          <input type="number" id="Quantity-{{ section.id }}"
+                 name="quantity" value="1" min="1" pattern="[0-9]*"
+                 class="product-form__input product-form__input--quantity customQTYSet" data-quantity-input
+                 >
+          <div class="qtybtnSetup">
+            <p><a href="javascript:void(0)" onclick="increamentQTY()">
+              +
+              </a></p>
+            <p><a href="javascript:void(0)"  onclick="decreamentQTY()">
+              -
+              </a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
+           data-error-message-wrapper
+           role="alert"
+           >
+        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+        {% include 'icon-error' %}
+        <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
+      </div>
+
+      <div class="product-form__controls-group product-form__controls-group--submit">
+        <div class="product-form__item product-form__item--submit
+                    {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+                    {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+             >
+          <input type="hidden" pack="" variantID='{{ product.variants.first.id }}' interval_freq='1' class="hidden-val">
+          <button type="submit" name="add"
+                  {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+                  aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                  class="btn custom_add product-form__cart-submit{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary-accent{% endif %}"
+                  {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+                  data-add-to-cart>
+            <span data-add-to-cart-text>
+              {% unless current_variant.available %}
+              {{ 'products.product.sold_out' | t }}
+              {% else %}
+              <i class="fas fa-shopping-bag"></i> {{ 'products.product.add_to_cart' | t }}
+              {% endunless %}
+            </span>
+            <span class="hide" data-loader>
+              {% include 'icon-spinner' %}
+            </span>
+          </button>
+          {% if section.settings.enable_payment_button %}
+          {{ form | payment_button }}
+          {% endif %}
+        </div>
+      </div>
+      {% endform %}
+    </div>
+  </div>
+</div>

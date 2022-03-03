@@ -1,0 +1,396 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+        jQuery(function() {
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $module = jQuery('#m-1602608334774').children('.module');
+  if (mode == 'dev') {
+      jQuery('#m-1602608334774').attr('data-name', '').css('background-image', 'none').removeAttr('data-image');
+      
+      var flag = true;
+      var $bkLiquid = parent.jQuery('body').find('#gfFrame').contents().find('#module-1602608334774');
+      if ($bkLiquid && $bkLiquid.length > 0) {
+          var $settings = $bkLiquid.find('.settings');
+          try {
+              var name = '';
+              var imageUrl = '';
+              settings = JSON.parse($settings.html());
+              for (var i = 0; i < settings.length; i++) {
+                  if (settings[i].name == 'name') {
+                      name = settings[i].default_value
+                  }
+                  if (settings[i].name == 'image') {
+                      imageUrl = settings[i].default_value
+                  }
+              }
+              if (imageUrl != '') {
+                  flag = false;
+                  jQuery('#m-1602608334774').css('background-image', 'url(' + imageUrl + ')').css('min-height', '100px').attr('data-image', 'true');
+              }
+              if (name != '' && name != 'Custom Code') {
+                  flag = false;
+                  jQuery('#m-1602608334774').attr('data-name', name);
+              }
+          } catch(error) {
+              console.log(error);
+          }
+      }
+      if (flag) {
+          jQuery('#m-1602608334774').attr('data-name', 'Right click on the module, then choose Edit Html / Liquid option to start writing your custom code.');
+      }
+  }
+});
+    
+    
+    
+    
+    
+    
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602608334813').children('.module');
+  $module.gfV3Product();
+}); 
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602615110002').children('.module');
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+
+  var blankOption = $module.attr('data-blankoption');
+  var blankOptionText = $module.attr('data-blankoptiontext');
+  var style = $module.attr('data-style');
+
+  $module.gfV3ProductVariants({
+    mode: mode,
+    blankOption: blankOption,
+    blankOptionText: blankOptionText,
+    style: style,
+    onVariantSelected: function(variant, $select) {}
+  });
+}); 
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602608334813-3').children('.module');
+  $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+}); 
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          jQuery(function() {
+  var $module = jQuery('#m-1602608334789').children('.module');
+  $module.gfV3Product();
+}); 
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602615279633').children('.module');
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+
+  var blankOption = $module.attr('data-blankoption');
+  var blankOptionText = $module.attr('data-blankoptiontext');
+  var style = $module.attr('data-style');
+
+  $module.gfV3ProductVariants({
+    mode: mode,
+    blankOption: blankOption,
+    blankOptionText: blankOptionText,
+    style: style,
+    onVariantSelected: function(variant, $select) {}
+  });
+}); 
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602608334789-3').children('.module');
+  $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+}); 
+      
+      
+    
+    
+    
+    
+    
+    
+          jQuery(function() {
+  var $module = jQuery('#m-1602612766313').children('.module');
+  var videoUrl = jQuery.trim($module.attr('data-url'));
+  var autoPause = $module.attr('data-autopause');
+  var autoPlay = $module.attr('data-autoplay');
+  var videoloop = $module.attr('data-videoloop');
+  var videoMute = $module.attr('data-videomute');
+  var byline = $module.attr('data-byline');
+  var showtitle = $module.attr('data-showtitle');
+  var showportrait = $module.attr('data-showportrait');
+
+  setTimeout(function() {
+    var videoWrapper = $module.children('.vimeo_video');
+    videoWrapper.empty().append('<div id="vimeo-wrapper-1602612766313"></div>');
+
+    var options = {
+      url: videoUrl,
+      loop: videoloop,
+      autoplay: autoPlay,
+      autopause: autoPause,
+      byline: byline,
+      title: showtitle,
+      muted: videoMute,
+      portrait: showportrait
+    };
+    var player = new Vimeo.Player("vimeo-wrapper-1602612766313", options);
+
+    player.on('loaded', function() {	
+      var $playerFrame = $module.find('iframe');	
+      var width = parseInt($playerFrame.attr('width'));	
+      var height = parseInt($playerFrame.attr('height'));	
+      if (width != NaN && height != NaN) {	
+        $module.find('.videoFullScreen').css('padding-bottom', (height / width * 100) + '%');	
+      }	
+    });	
+    
+    $module.on('pausevideo', function() {	
+      player.pause();	
+    });
+  }, 100);
+});
+      
+    
+    
+    
+    
+    
+          jQuery(function() {
+  var $module = jQuery('#m-1602614405287').children('.module');
+  var videoUrl = jQuery.trim($module.attr('data-url'));
+  var autoPause = $module.attr('data-autopause');
+  var autoPlay = $module.attr('data-autoplay');
+  var videoloop = $module.attr('data-videoloop');
+  var videoMute = $module.attr('data-videomute');
+  var byline = $module.attr('data-byline');
+  var showtitle = $module.attr('data-showtitle');
+  var showportrait = $module.attr('data-showportrait');
+
+  setTimeout(function() {
+    var videoWrapper = $module.children('.vimeo_video');
+    videoWrapper.empty().append('<div id="vimeo-wrapper-1602614405287"></div>');
+
+    var options = {
+      url: videoUrl,
+      loop: videoloop,
+      autoplay: autoPlay,
+      autopause: autoPause,
+      byline: byline,
+      title: showtitle,
+      muted: videoMute,
+      portrait: showportrait
+    };
+    var player = new Vimeo.Player("vimeo-wrapper-1602614405287", options);
+
+    player.on('loaded', function() {	
+      var $playerFrame = $module.find('iframe');	
+      var width = parseInt($playerFrame.attr('width'));	
+      var height = parseInt($playerFrame.attr('height'));	
+      if (width != NaN && height != NaN) {	
+        $module.find('.videoFullScreen').css('padding-bottom', (height / width * 100) + '%');	
+      }	
+    });	
+    
+    $module.on('pausevideo', function() {	
+      player.pause();	
+    });
+  }, 100);
+});
+      
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        jQuery(function() {
+  try {
+    var $module = jQuery('#m-1602608334930').children('.module');   
+    var navspeed = $module.data('navspeed'),
+      autoplaytimeout = $module.data('autoplaytimeout'),
+      autoplayhoverpause = $module.data('autoplayhoverpause'),
+      navlg = $module.data('navlg'),
+      navmd = $module.data('navmd'),
+      navsm = $module.data('navsm'),
+      navxs = $module.data('navxs'),
+      collg = $module.data('collg'),
+      colmd = $module.data('colmd'),
+      colsm = $module.data('colsm'),
+      colxs = $module.data('colxs'),
+      dotslg = $module.data('dotslg'),
+      dotsmd = $module.data('dotsmd'),
+      dotssm = $module.data('dotssm'),
+      dotsxs = $module.data('dotsxs'),
+      marginlg = parseInt($module.data('marginlg')),
+      marginmd = parseInt($module.data('marginmd')),
+      marginsm = parseInt($module.data('marginsm')),
+      marginxs = parseInt($module.data('marginxs'));
+
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    if(mode == 'production') {
+      var autoplay = $module.data('autoplay'), 
+          loop = $module.data('loop');
+    } else {
+      var autoplay = 0, 
+          loop = 0;
+    }
+
+    var initCarousel = function() {
+      $module.owlCarousel({
+        mouseDrag: false,
+        autoplayHoverPause: autoplayhoverpause,
+        autoplay: autoplay,
+        autoplayTimeout: autoplaytimeout,
+        loop: loop,
+        navSpeed: navspeed,
+        autoWidth: !1,
+        responsiveClass:true,
+        responsive:{
+          0:{
+              items:colxs,
+              nav: navxs,
+              dots:dotsxs,
+              margin: marginxs
+          },
+          768:{
+              items:colsm,
+              nav: navsm,
+              dots:dotssm,
+              margin: marginsm
+          },
+          992:{
+              items:colmd,
+              nav: navmd,
+              dots:dotsmd,
+              margin: marginmd
+          },
+          1200:{
+              items:collg,
+              nav: navlg,
+              dots:dotslg,
+              margin: marginlg
+          }
+        }
+      });
+    }
+    
+    // Fix nested carousel bug	
+    if ($module.parent().parent().closest('.module-wrap[data-label="Carousel"]').length > 0) {	
+        setTimeout(function() {	
+            initCarousel();	
+        }, 300)	
+    } else {	
+        initCarousel();	
+    }
+  } catch(err) {}
+}); 
+    
+    
+    
+    
+      
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602609433688').children('.module');
+  $module.gfV3Product();
+}); 
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602615199710').children('.module');
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+
+  var blankOption = $module.attr('data-blankoption');
+  var blankOptionText = $module.attr('data-blankoptiontext');
+  var style = $module.attr('data-style');
+
+  $module.gfV3ProductVariants({
+    mode: mode,
+    blankOption: blankOption,
+    blankOptionText: blankOptionText,
+    style: style,
+    onVariantSelected: function(variant, $select) {}
+  });
+}); 
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1602609433688-3').children('.module');
+  $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+}); 
+      
+    
+    
+      
+      
+      
+      
+    
+    
+    
+      
+    
+    
+    
+    
+        jQuery(function() {
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $module = jQuery('#m-1602608334782').children('.module');
+  if (mode == 'dev') {
+      jQuery('#m-1602608334782').attr('data-name', '').css('background-image', 'none').removeAttr('data-image');
+      
+      var flag = true;
+      var $bkLiquid = parent.jQuery('body').find('#gfFrame').contents().find('#module-1602608334782');
+      if ($bkLiquid && $bkLiquid.length > 0) {
+          var $settings = $bkLiquid.find('.settings');
+          try {
+              var name = '';
+              var imageUrl = '';
+              settings = JSON.parse($settings.html());
+              for (var i = 0; i < settings.length; i++) {
+                  if (settings[i].name == 'name') {
+                      name = settings[i].default_value
+                  }
+                  if (settings[i].name == 'image') {
+                      imageUrl = settings[i].default_value
+                  }
+              }
+              if (imageUrl != '') {
+                  flag = false;
+                  jQuery('#m-1602608334782').css('background-image', 'url(' + imageUrl + ')').css('min-height', '100px').attr('data-image', 'true');
+              }
+              if (name != '' && name != 'Custom Code') {
+                  flag = false;
+                  jQuery('#m-1602608334782').attr('data-name', name);
+              }
+          } catch(error) {
+              console.log(error);
+          }
+      }
+      if (flag) {
+          jQuery('#m-1602608334782').attr('data-name', 'Right click on the module, then choose Edit Html / Liquid option to start writing your custom code.');
+      }
+  }
+});
+    

@@ -1,0 +1,95 @@
+<div class="terms-heading__paragraph-2 heading__paragraph--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="rich-text">
+  <div class="grid page-width">
+    <div class="heading__paragraph-grid__item text-center{% unless section.settings.full_width %} medium-up--two-thirds medium-up--push-one-sixth{% endunless %}">
+      {% if section.settings.section_title != blank %}
+        <h2 class="terms-heading__paragraph__heading separator
+                   {% if section.settings.text_size == 'large' %} h1{% elsif section.settings.text_size == 'small' %} h3{% endif %}"
+                   data-animate>
+          {{ section.settings.section_title | escape }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.text != blank %}
+      <div class="terms-heading__paragraph__body-text">
+        {{ section.settings.text }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Terms Heading Paragraph 2"
+  },
+  "class": "index-section--terms-heading__paragraph",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": {
+        "en": "Wide display"
+      }
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": {
+        "en": "Heading"
+      },
+      "default": {
+        "en": "Talk about your brand"
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": {
+        "en": "Text"
+      },
+      "default": {
+        "en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+      }
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": {
+        "en": "Size"
+      },
+      "default": "medium",
+      "options": [
+        {
+          "label": {
+            "en": "Small"
+          },
+          "value": "small"
+        },
+        {
+          "label": {
+            "en": "Medium"
+          },
+          "value": "medium"
+        },
+        {
+          "label": {
+            "en": "Large"
+          },
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Terms Heading Paragraph 1"
+      },
+      "category": {
+        "en": "Text"
+      }
+    }
+  ]
+}
+{% endschema %}

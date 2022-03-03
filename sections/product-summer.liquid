@@ -1,0 +1,84 @@
+<div id="about-image-message section-{{ section.id }}" class="image-with-text {{ section.settings.section_style }}" data-section-id="{{ section.id }}" data-section-type="featured-row-section">
+  <div class="box">
+    <div class="wrapper">
+      {% comment %}
+      {% endcomment %}
+
+      <div class="product-summer-heading">
+        {% unless section.settings.title == blank %}
+          <h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
+          <h6 class="section-header__sub-title">{{ section.settings.sub-title | escape }}</h6>
+        {% endunless %}  
+      </div>
+{% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+      <div class="grid featured-row">
+        <div class="grid__item large--six-twelfths medium--six-twelfths small--one-whole featured-row__item featured-row-{{ section.settings.image_alignement }}">
+          {% if section.settings.image != blank %}
+            <div class="feature-row__image-wrapper image-wrapper" style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;">
+              {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+              <img class="feature-row__image image lazyload"
+                src="{{ section.settings.image | img_url: 'medium' }}"
+                data-src="{{ img_url }}"
+                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+                data-sizes="auto"
+                loading="lazy"
+                alt="{{ section.settings.image.alt | escape }}">
+            </div>
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+
+        <div class="grid__item large--six-twelfths medium--six-twelfths small--one-whole feature-row__item {{ section.settings.text_alignment }}">
+          {% unless section.settings.text == blank %}
+            <div class="rte {% if section.settings.text_size == 'large' %}lead {% endif %}">{{ section.settings.text }}</div>
+          {% endunless %}
+          {% unless section.settings.button_label == blank %}
+            <a href="{{ section.settings.button_link }}" class="btn {{ section.settings.button_style }}">
+              {{ section.settings.button_label | escape }}
+            </a>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Summer Delivery",
+    "class": "featured-row-section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Product Summer Heading"
+      },
+      {
+        "type": "text",
+        "id": "sub-title",
+        "label": "Sub Heading",
+        "default": "Product Summer Subheading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Summer Delivery",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}{% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}

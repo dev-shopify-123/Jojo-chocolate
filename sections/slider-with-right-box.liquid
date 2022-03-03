@@ -1,0 +1,113 @@
+<!-- Welcome section starts -->
+<section class="image_right_box_container">
+  <div class="image_right_box_bg">
+    {% if section.settings.section-heading %}
+    <div class="row">
+      <div class="container">
+        <div class="col-md-4 pull-right bg-white padd-50">
+          <h1 style="color:{{ section.settings.heading-color }}">{{ section.settings.section-heading }}</h1>
+          <p style="color:{{ section.settings.description-color }}">{{ section.settings.description }}</p>
+          {% if section.settings.view-btn-link %}
+          <a href="{{ section.settings.view-btn-link }}" class="btn" style="background-color:{{ section.settings.button-color }}">
+            {% endif %}
+            {% if section.settings.view-btn %}
+            <span style="color:{{ section.settings.button-text-color }}">{{ section.settings.view-btn }}</span>
+            {% endif %}
+            {% if section.settings.view-btn-link %}
+          </a>
+          {% endif %}
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    {% endif %}
+    {% if section.settings.section-image %}
+  </div>  
+  {% endif %}
+</section>
+<style>
+  {% if section.settings.section-image %}
+  .image_right_box_bg{
+    background:url('{{ section.settings.section-image | img_url: 'master' }}')
+      }
+  {% endif %}
+  {% if section.settings.section-image-mobile %}
+  @media screen and (min-width:320px) and (max-width:720px){
+    .image_right_box_bg{
+      	background:url('{{ section.settings.section-image-mobile | img_url: 'master' }}');
+            height: 540px;
+    padding-top: 250px !important;
+}
+      }
+  }
+  {% endif %}
+</style>
+
+<!-- Welcome section ends -->
+{% schema %}
+{
+"name": "Image Right Box", // Section name
+"settings": [
+{
+"id": "section-image",
+"type": "image_picker",
+"label": "Select Image"
+},
+{
+"id": "section-image-mobile",
+"type": "image_picker",
+"label": "Select Mobile Image"
+},
+{
+"id": "section-heading",
+"type": "text",
+"label": "Heading 1"
+},
+{
+"id": "description",
+"type": "textarea",
+"label": "Description"
+},
+{
+"id": "view-btn-link",
+"type": "url",
+"label": "Button URL"
+},
+{
+"id": "view-btn",
+"type": "text",
+"label": "Button name"
+},
+{
+"id": "heading-color",
+"type": "color",
+"label": "Heading Color",
+"default" : "#c96323"
+},
+{
+"id": "description-color",
+"type": "color",
+"label": "Descrition Color",
+"default" : "#c96323"
+},
+{
+"id": "button-color",
+"type": "color",
+"label": "Button Color",
+"default" : "#c63663"
+},
+{
+"id": "button-text-color",
+"type": "color",
+"label": "Button Text Color",
+"default" : "#fff"
+}
+],
+"presets": [
+{
+"name": "Image Right Box",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,86 @@
+<br />
+      <div class="padd-15 productcolors">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>INDIVIDUAL FLAVORS</h4>
+            <ul class="list-inline">
+              {% if product.metafields.my_fields.individual_product_one_color and product.metafields.my_fields.individual_product_one_url %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.individual_product_one_url }}">
+                    <div style="background:{{ product.metafields.my_fields.individual_product_one_color }}"></div>
+                    <p>{{ product.metafields.my_fields.individual_product_one_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+              {% if product.metafields.my_fields.individual_product_two_color and product.metafields.my_fields.individual_product_two_url %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.individual_product_two_url }}">
+                    <div style="background:{{ product.metafields.my_fields.individual_product_two_color }}"></div>
+                    <p>{{ product.metafields.my_fields.individual_product_two_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+              {% if product.metafields.my_fields.individual_product_three_color and product.metafields.my_fields.individual_product_three_url %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.individual_product_three_url }}">
+                    <div  style="background:{{ product.metafields.my_fields.individual_product_three_color }}"></div>
+                    <p>{{ product.metafields.my_fields.individual_product_three_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+              {% if product.metafields.my_fields.individual_product_four_color and product.metafields.my_fields.individual_product_four_url %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.individual_product_four_url }}">
+                    <div style="background:{{ product.metafields.my_fields.individual_product_four_color }}"></div>
+                    <p>{{ product.metafields.my_fields.individual_product_four_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+               {% if product.metafields.my_fields.individual_product_five_color and product.metafields.my_fields.individual_product_five_url %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.individual_product_five_url }}">
+                    <div style="background:{{ product.metafields.my_fields.individual_product_five_color }}"></div>
+                    <p>{{ product.metafields.my_fields.individual_product_five_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+            </ul>
+            <br /><br />
+            <h4>PACKS</h4>
+            <ul class="list-inline packsset">
+              {% if product.metafields.my_fields.packs_product_one_url and product.metafields.my_fields.packs_product_one_img %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.packs_product_one_url }}">
+                    <img src="{{ product.metafields.my_fields.packs_product_one_img | img_url : "1000x" }}" />
+                    <p>{{ product.metafields.my_fields.packs_product_one_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+              {% if product.metafields.my_fields.packs_product_two_url and product.metafields.my_fields.packs_product_two_img %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.packs_product_two_url }}">
+                    <img src="{{ product.metafields.my_fields.packs_product_two_img | img_url : "1000x" }}" />
+                    <p>{{ product.metafields.my_fields.packs_product_two_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+              {% if product.metafields.my_fields.packs_product_three_url and product.metafields.my_fields.packs_product_three_img %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.packs_product_three_url }}">
+                    <img src="{{ product.metafields.my_fields.packs_product_three_img | img_url : "1000x" }}" />
+                    <p>{{ product.metafields.my_fields.packs_product_three_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+              {% if product.metafields.my_fields.packs_product_four_url and product.metafields.my_fields.packs_product_four_img %}
+              	<li>
+                  <a href="{{ product.metafields.my_fields.packs_product_four_url }}">
+                    <img src="{{ product.metafields.my_fields.packs_product_four_img | img_url : "1000x" }}" />
+                    <p>{{ product.metafields.my_fields.packs_product_four_title }}</p>
+                  </a>
+              	</li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>

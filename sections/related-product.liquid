@@ -1,0 +1,419 @@
+{% if section.settings.show_related_products %}
+  {%- assign limit = section.settings.desktop_grid | times: section.settings.rows -%}
+  {% assign counter = 0 %}
+
+  {% if section.settings.related_collection %}
+    {% assign related_collection = true %}
+  {% else %}
+    {% assign related_all = true %}
+  {% endif %}
+
+  {% if section.settings.same_vendor %}
+    {% assign same_vendor = true %}
+  {% else %}
+    {% assign same_vendor = false %}
+  {% endif %}
+
+  {% if section.settings.same_type %}
+    {% assign same_type = true %}
+  {% else %}
+    {% assign same_type = false %}
+  {% endif %}
+
+  {% assign found_a_collection = false %}
+
+  {% if related_collection %}
+    {% assign exclusions = 'frontpage,all' | split: ',' %}
+
+    {% if product.metafields.c_f['Related Products'] %}
+      {% assign collection = collections[product.metafields.c_f['Related Products']] %}
+    {% endif %}
+
+    {% if collection and collection.all_products_count > 1 %}
+      {% unless exclusions contains collection.handle %}
+        {% assign found_a_collection = true %}
+      {% endunless %}
+    {% endif %}
+
+    {% unless found_a_collection %}
+      {% for c in product.collections %}
+        {% unless exclusions contains c.handle or c.all_products_count < 2 %}
+          {% assign found_a_collection = true %}
+          {% assign collection = c %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    {% endunless %}
+
+    {% if found_a_collection == false and section.settings.never_empty %}
+      {% assign found_a_collection = true %}
+    {% endif %}
+  {% endif %}
+
+  {% if related_all %}
+    {% assign collection = collections.all %}
+    {% assign found_a_collection = true %}
+  {% endif %}
+
+  {% if found_a_collection %}
+    {% assign current_product = product %}
+
+    {% include 'product-width' %}
+
+    {% capture related_items %}
+      {% for product in collection.products %}
+        {%- comment %}<locksmith:5692>{% endcomment -%}
+          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:5692>{% endcomment -%}
+        {% comment %} Wholesale_Club_Product_Prices Start {% endcomment %}
+        {% assign base_product = product %}
+        {% assign base_variant = product.selected_or_first_available_variant %}
+
+        {% if shop.metafields.sawholesale['base_price'] == blank %}
+          {% assign base_price = 'compare_at_price' %}
+        {% else %}
+          {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+        {% endif %}
+
+        {% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+        {% if customer.tags != blank %}
+          {% for mf in base_product.metafields.sawholesale %}
+            {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+            {% if customer.tags contains product_customer_tag %}
+              {% assign saw_has_discount = true %}
+              {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+              {% assign price_key = product_customer_tag | prepend: 'price_' %}
+              {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign saw_discount = 1 | minus: saw_discount %}
+
+        {% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+          {% assign saw_variant_compare_at_price = base_variant.price %}
+        {% else %}
+          {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+        {% endif %}
+
+        {% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+        {% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+          {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+        {% else %}
+          {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+        {% endif %}
+
+        {% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+          {% assign WCProduct_Price = base_product.price %}
+          {% assign WCProduct_ComparePrice = base_product.compare_at_price %}
+          {% assign WCProduct_PriceMin = base_product.price_min %}
+          {% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}
+          {% assign WCProduct_PriceMax = base_product.price_max %}
+          {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
+          {% assign WCProduct_VariantPrice = base_variant.price %}
+          {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
+        {% else %}   
+          {% assign WCProduct_Price = saw_variant_price %}
+          {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
+          {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
+          {% assign WCProduct_ComparePrice = saw_variant_compare_at_price %}
+          {% if base_product.compare_at_price_min != 0 %}{% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}{% else %}{% assign WCProduct_ComparePriceMin = base_product.price_min %}{% endif %}
+          {% if base_product.compare_at_price_max != 0 %}{% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}{% else %}{% assign WCProduct_ComparePriceMax = base_product.price_max %}{% endif %}
+          {% assign WCProduct_VariantPrice = saw_variant_price %}
+          {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
+        {% endif %}
+        {% comment %} Wholesale_Club_Product_Prices End {% endcomment %}
+
+        {% unless product.handle == current_product.handle %}
+          {% unless same_vendor and current_product.vendor != product.vendor %}
+            {% unless same_type and current_product.type != product.type %}
+              {% include 'product-grid-item' %}
+            {% endunless %}
+          {% endunless %}
+        {% endunless %}
+
+      {% endfor %}
+    {% endcapture %}
+    
+    {% if related_items == blank and section.settings.never_empty %}
+      {% assign collection = collections.all %}
+      {% assign found_a_collection = true %}
+
+      {% capture related_items %}
+        {% for product in collection.products %}
+          {%- comment %}<locksmith:b2d7>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:b2d7>{% endcomment -%}
+          {% comment %} Wholesale_Club_Product_Prices Start {% endcomment %}
+          {% assign base_product = product %}
+          {% assign base_variant = product.selected_or_first_available_variant %}
+
+          {% if shop.metafields.sawholesale['base_price'] == blank %}
+            {% assign base_price = 'compare_at_price' %}
+          {% else %}
+            {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+          {% endif %}
+
+          {% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+          {% if customer.tags != blank %}
+            {% for mf in base_product.metafields.sawholesale %}
+              {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+              {% if customer.tags contains product_customer_tag %}
+                {% assign saw_has_discount = true %}
+                {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+                {% assign price_key = product_customer_tag | prepend: 'price_' %}
+                {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+          {% assign saw_discount = 1 | minus: saw_discount %}
+
+          {% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+            {% assign saw_variant_compare_at_price = base_variant.price %}
+          {% else %}
+            {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+          {% endif %}
+
+          {% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+          {% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+            {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+          {% else %}
+            {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+          {% endif %}
+
+          {% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+            {% assign WCProduct_Price = base_product.price %}
+            {% assign WCProduct_ComparePrice = base_product.compare_at_price %}
+            {% assign WCProduct_PriceMin = base_product.price_min %}
+            {% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}
+            {% assign WCProduct_PriceMax = base_product.price_max %}
+            {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
+            {% assign WCProduct_VariantPrice = base_variant.price %}
+            {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
+          {% else %}   
+            {% assign WCProduct_Price = saw_variant_price %}
+            {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
+            {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
+            {% assign WCProduct_ComparePrice = saw_variant_compare_at_price %}
+            {% if base_product.compare_at_price_min != 0 %}{% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}{% else %}{% assign WCProduct_ComparePriceMin = base_product.price_min %}{% endif %}
+            {% if base_product.compare_at_price_max != 0 %}{% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}{% else %}{% assign WCProduct_ComparePriceMax = base_product.price_max %}{% endif %}
+            {% assign WCProduct_VariantPrice = saw_variant_price %}
+            {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
+          {% endif %}
+          {% comment %} Wholesale_Club_Product_Prices End {% endcomment %}
+
+          {% unless product.handle == current_product.handle %}
+            {% include 'product-grid-item' %}
+          {% endunless %}
+
+        {% endfor %}
+      {% endcapture %}
+    {% endif %}
+
+    {% assign related_items = related_items | trim %}
+
+    {% unless related_items == blank %}
+      <div id="relatedProductSection" class="{{ section.settings.section_style }}" data-section-id="{{ section.id }}" data-section-type="product-grid-section">
+        <div class="box">
+          <div class="wrapper">
+            {% unless section.settings.title == blank and section.settings.subtitle == blank %}
+            <div class="section-header">
+              <h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
+              <p class="section-header__subtitle">{{ section.settings.subtitle | escape }}</p>
+            </div>
+            {% endunless %}
+
+            <div class="grid grid-uniform grid--spacer{% if section.settings.desktop_grid == '2' %} large--eight-twelfths{% endif %}{% if section.settings.slider_related_products %} slick-format slick-product-grid slick-product-grid-{{ section.id }}{% endif %}"
+                 data-count="{{ limit }}"
+                 data-slidetoshow="{{ section.settings.desktop_grid }}"
+                 data-slidetoshowmobile="{{ section.settings.mobile_grid }}"
+                 data-autoplay="{{ section.settings.autoplay }}"
+                 data-autoplayspeed="{{ section.settings.autoplayspeed | times: 1000 }}"
+                 data-dots="{{ section.settings.dots }}"
+                 data-arrows="{{ section.settings.arrows }}">
+              {{ related_items }}
+            </div>
+
+            <div class="slick-navigation">
+              <button class="slick-arrows slick-prev">
+                <span class="fas fa-arrow-left"></span>
+              </button>
+              <div class="slick-dots-container"></div>
+              <button class="slick-arrows slick-next">
+                <span class="fas fa-arrow-right"></span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {% endunless %}
+  {% endif %}
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Related product",
+  "class": "related-product-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_related_products",
+        "label": "Show related products",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "related_collection",
+        "label": "Same collection",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "same_vendor",
+        "label": "Same vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "same_type",
+        "label": "Same product type",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "never_empty",
+        "label": "Show all products if empty",
+        "default": true
+      },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "More in this collection"
+      },
+    {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subheading"
+      },
+      {
+        "type": "select",
+        "id": "section_style",
+        "label": "Section style",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "Default"
+          },
+      {
+            "value": "bg-section",
+            "label": "Add background color"
+          },
+          {
+            "value": "border-section",
+            "label": "Add border top"
+          }
+        ]
+      },
+    {
+        "type": "select",
+        "id": "rows",
+        "label": "Number of rows",
+        "default": "2",
+        "options": [
+      {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          }
+        ]
+      },
+    {
+    "type": "select",
+    "id": "desktop_grid",
+    "label": "Products per row (desktop)",
+        "default": "4",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          }
+        ]
+    },
+    {
+      "type": "select",
+    "id": "mobile_grid",
+    "label": "Product per row (mobile)",
+    "default": "2",
+    "options":[
+      {
+      "value": "1",
+      "label": "1"
+      },
+      {
+      "value":"2",
+      "label": "2"
+      }
+    ]
+    },
+    {
+    "type": "header",
+    "content": "Slider options"
+    },
+      {
+        "type": "checkbox",
+        "id": "slider_related_products",
+        "label": "Enable slider",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto rotate",
+        "default": true
+      },
+    {
+        "type": "checkbox",
+        "id": "dots",
+        "label": "Show dots",
+        "default": true
+      },
+    {
+        "type": "checkbox",
+        "id": "arrows",
+        "label": "Show arrows",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "autoplayspeed",
+        "label": "Slide changes every",
+        "min": 3,
+        "max": 10,
+        "step": 1,
+        "unit": "s",
+        "default": 5
+      }
+    ]
+  }
+{% endschema %}

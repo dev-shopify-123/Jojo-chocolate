@@ -1,0 +1,175 @@
+<div class="container">
+	<div class="row">
+      	<div class="col-md-4">
+        {% assign options = '' %}
+		{% for block in section.blocks %}
+          	{% assign options = options | append: ',' | append: block.settings.category %}
+        {% endfor %}
+        {% assign options = options | remove_first: ',' | split: ',' | uniq %}
+        {% for option in options %}
+          <ul class="list-unstyled">
+            <li>
+              <a href="#{{ option }}" class="btn btn-link color-green">
+                {{ option }}
+              </a>
+            </li>
+          </ul>
+        {% endfor %}
+      	</div>
+      	<div class="col-md-8">
+          {% assign count = 1 %}
+          {% assign tabs_count = 1 %}
+          {% for option in options %}
+          	<h1 class="faq_main_heading">
+              {{ option }}
+          	</h1>
+          	<div class="panel-group" id="accordion_{{ count }}" role="tablist" aria-multiselectable="true">
+              {% for block in section.blocks %}
+              	{% if option == block.settings.category %}
+              	<div class="panel panel-default">
+                	<div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion_{{ count }}" href="#collapse{{ tabs_count }}" aria-expanded="true" aria-controls="collapseOne">
+                          {{ block.settings.sub_category }}
+                          <div class="signholder">
+                            <span class="plus-sign"></span>
+                          </div>
+                        </a>
+                      </h4>
+                  </div>
+                  <div id="collapse{{ tabs_count }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      {% if block.settings.description %}
+                      	<p> {{ block.settings.description }} </p>
+                      {% endif %}
+                      {% if block.settings.img_one %}
+                      	<img src="{{ block.settings.img_one | img_url : 'large' }}" class="img-responsive" />
+                      {% endif %}
+                      {% if block.settings.img_two %}
+                      	<img src="{{ block.settings.img_two | img_url : 'large' }}" class="img-responsive" />
+                      {% endif %}
+                      {% if block.settings.img_three %}
+                      	<img src="{{ block.settings.img_three | img_url : 'large' }}" class="img-responsive" />
+                      {% endif %}
+                      {% if block.settings.img_four %}
+                      	<img src="{{ block.settings.img_four | img_url : 'large' }}" class="img-responsive" />
+                      {% endif %}
+                      {% if block.settings.img_five %}
+                      	<img src="{{ block.settings.img_five | img_url : 'large' }}" class="img-responsive" />
+                      {% endif %}
+                    </div>
+                  </div>
+              	</div>
+            	{% assign tabs_count = tabs_count | plus: 1 %}  
+              	{% endif %}
+              {% endfor %}
+          	</div>
+          	{% assign count = count | plus: 1 %}
+          {% endfor %}
+      	</div>
+  	</div>
+</div>
+
+{% assign count = count | plus: 1 %}
+{% schema %}
+  {
+    "name": "FAQ Blocks",
+    "blocks":[
+      {
+        "type": "FAQ",
+        "name": "Add FAQ Category",
+        "settings": [
+          {
+            "type": "text",
+            "id": "category",
+            "label": "Category Title",
+			"info":"optional"
+          },
+		  {
+            "type": "text",
+            "id": "sub_category",
+            "label": "Sub Category Title"
+          },
+ 		  {
+            "type": "richtext",
+            "id": "description",
+            "label": "Sub Category Title"
+          },
+		  {
+            "type": "image_picker",
+            "id": "img_one",
+            "label": "Image One"
+          },
+		  {
+            "type": "image_picker",
+            "id": "img_two",
+            "label": "Image Two"
+          },
+		  {
+            "type": "image_picker",
+            "id": "img_three",
+            "label": "Image Three"
+          },
+		  {
+            "type": "image_picker",
+            "id": "img_four",
+            "label": "Image Four"
+          },
+		  {
+            "type": "image_picker",
+            "id": "img_five",
+            "label": "Image Five"
+          }
+		]
+	  }
+    ],
+	"presets": [
+      {
+          "name": "FAQ",
+          "category": "faq"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+   .grid__item:hover img {
+    opacity: 1 !important;
+}
+  .signholder {
+    position: relative;
+}
+.plus-sign {
+    border-radius: 4%;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+}
+.plus-sign::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #000;
+  height: 3px;
+  margin-top: -5px;
+  top: 63%;
+  left: 5px;
+  right: 5px;
+  z-index: 9;
+}
+.plus-sign::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #000;
+  width: 3px;
+  margin-left: 3px;
+  left: 33%;
+  top: 5px;
+  bottom: 5px;
+  z-index: 9;
+}
+</style>
