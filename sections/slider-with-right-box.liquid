@@ -1,6 +1,9 @@
 <!-- Welcome section starts -->
 <section class="image_right_box_container">
   <div class="image_right_box_bg">
+    {% if section.settings.section-image-mobile != blank %}
+      <img class="mobile_image" src="{{ section.settings.section-image-mobile | img_url: 'master'}}">
+    {% endif %}
     {% if section.settings.section-heading %}
     <div class="row">
       <div class="container">
@@ -29,17 +32,23 @@
   {% if section.settings.section-image %}
   .image_right_box_bg{
     background:url('{{ section.settings.section-image | img_url: 'master' }}')
-      }
+  }
   {% endif %}
+  .mobile_image {
+    display: none;
+  }
   {% if section.settings.section-image-mobile %}
   @media screen and (min-width:320px) and (max-width:720px){
     .image_right_box_bg{
-      	background:url('{{ section.settings.section-image-mobile | img_url: 'master' }}');
-            height: 540px;
-    padding-top: 250px !important;
-}
-      }
+      background:url('{{ section.settings.section-image-mobile | img_url: 'master' }}');
+      height: 540px;
+      padding-top: 40px !important;
+    }
+    .mobile_image {
+      display: block;
+    }
   }
+  
   {% endif %}
 </style>
 
