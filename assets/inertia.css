@@ -330,7 +330,7 @@ div.rc_popup * {
   width: 70%;
   margin-top: 0px;
   margin-left: 81px;
-  
+  float: inherit;
 }
 button.btn.product-form__cart-submit {
   background: #4d8b2b;
