@@ -7057,7 +7057,7 @@ input {
 }
 
 .owl-carousel .owl-nav .owl-prev:before{
-    // fa-chevron-left
+    
     content: "\f053";
     margin-right:10px;
 }
@@ -7156,7 +7156,7 @@ form#product_form_6970906443926 .product-ctm-price {
 form#product_form_6970903822486 .product-ctm-price {
     display: block !important;
 }
-form#product_form_6120152727702 div#rc_radio_options {
+/* form#product_form_6120152727702 div#rc_radio_options {
     margin-left: -348px;
     margin-right: 355px;
 }
@@ -7166,7 +7166,7 @@ form#product_form_6120152727702 .rc_popup {
 form#product_form_6120152727702 .product-form__controls-group {
     margin-top: -200px;
 
-}
+} */
 /* span.price-item.price-item--regular {
     display: block;
 } */

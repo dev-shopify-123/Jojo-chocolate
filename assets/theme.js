@@ -9941,9 +9941,9 @@ a.prototype[n]=function(){var n=arguments;return e&&!this.__chain__?t.apply(this
         $("#SearchDrawer").hide();
       });
       $('.fordesktop .productcolors .col-md-6').each(function(){
-        console.log('here...........')
+        console.log('...hereaaa....')
         if($(this).children().length == 0) {
-          console.log('remove......')
+          
           $(this).hide();
         }
       })
