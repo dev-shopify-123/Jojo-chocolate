@@ -72,3 +72,11 @@ data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false
 </div>
 {% endif %}
 
+{% if widget_type == 'judgeme_ugc_media_grid' %}
+<div class='jdgm-widget jdgm-ugc-media-wrapper'
+    data-from-snippet='{% if concierge_install != nil %}{{ concierge_install }}{% else %}true{% endif %}'
+    data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false{% endif %}' >
+  {{ shop.metafields.judgeme.ugc_media_grid }}
+</div>
+{% endif %}
+

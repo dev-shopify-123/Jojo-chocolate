@@ -7141,9 +7141,9 @@ p.errmsg {
     display: none;
 }
 
-.product-ctm-price {
+/* .product-ctm-price {
     display: none;
-}
+} */
 .product-ctm-price {
     padding-top: 20px !important;
 }

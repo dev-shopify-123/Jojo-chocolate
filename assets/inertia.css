@@ -11,9 +11,13 @@ body {
   padding: 150px 0px;
   background-repeat: no-repeat !important;
 }
-.custom_content {
-  margin-right: 9vw;
+@media (min-width: 767px) {
+  .custom_content {
+    margin-right: 5vw;
+  }
 }
+
+
 .bg-white {
   background: #fff;
 }

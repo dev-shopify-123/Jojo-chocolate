@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         for(var i = 0; i < mincartSettings.checkoutButtons.length; i++){
             mincartSettings.checkoutButtons[i].disabled = true;
+            mincartSettings.checkoutButtons[i].classList.add('mincart-state-loading');
         }
         for(var i = 0; i < mincartSettings.additionalCheckout.length; i++){
             mincartSettings.additionalCheckout[i].classList.add('mincartDisabled');
@@ -84,17 +85,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 {% if template contains 'product' %}
                     mincartSettings.addProductButton = $('[name="add"]');
 
+                    const buttonInnerText = mincartSettings.addProductButton.find("[data-add-to-cart-text]");
+                    if(buttonInnerText.length) {
+                        mincartSettings.addProductButtonTextElement = buttonInnerText;
+                    }
+                    else {
+                        mincartSettings.addProductButtonTextElement = mincartSettings.addProductButton;
+                    }
+                    
+
+
                     if(mincartSettings.addProductButton.is('input')){
                         mincartSettings.texts.addProductButton = mincartSettings.addProductButton.val();
                     }
                     else{
-                        const buttonInnerText = mincartSettings.addProductButton.find("[data-add-to-cart-text]");
-                        if(buttonInnerText.length) {
-                            mincartSettings.texts.addProductButton = buttonInnerText.html();
-                        }
-                        else {
-                            mincartSettings.texts.addProductButton = mincartSettings.addProductButton.html();
-                        }
+                        mincartSettings.texts.addProductButton = mincartSettings.addProductButtonTextElement.html();
                     }
 
                     {% if product.available %}
@@ -104,15 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                         else{
                             mincartSettings.addProductButton.addClass('mincartDisabled');
-
-                            const buttonInnerText = mincartSettings.addProductButton.find("[data-add-to-cart-text]");
-                            if(buttonInnerText.length) {
-                                buttonInnerText.html("Loading");
-                            }
-                            else {
-                                mincartSettings.addProductButton.html("Loading");
-                            }
-                            
+                            mincartSettings.addProductButtonTextElement.html("Loading");
                         }
                     {% endif %}
                 {% endif %}
@@ -185,3 +182,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 </style>
 
+    

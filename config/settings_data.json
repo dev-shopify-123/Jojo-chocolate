@@ -55,9 +55,9 @@
           "main_linklist": "sidebar_menu",
           "message": true,
           "home_page_only": false,
-          "message_text": "NEW! Granola Butter Filled Bites......FREE SHIPPING over $30",
-          "message_link": "shopify:\/\/products\/granolabutterfilledbites",
-          "color_bg": "#c85d1f",
+          "message_text": "Limited Time Only...Easter Peanut Butter Bites! 🐰🥜",
+          "message_link": "shopify:\/\/products\/easter-pb-wrapped-bites-1-ct",
+          "color_bg": "#ffa870",
           "color_text": "#ffffff"
         }
       },
@@ -208,15 +208,15 @@
       "1631885842f763354f": {
         "type": "slider-with-right-box",
         "settings": {
-          "section-image": "shopify:\/\/shop_images\/GB_for_Homepage.png",
-          "section-image-mobile": "shopify:\/\/shop_images\/4_1059c2ac-8ed9-4264-be4b-ef44e38b600d.png",
-          "section-heading": "Meet the Newest Member of JOJO's",
-          "description": "Satisfy your sweet snack cravings with JOJO’s deliciously low-sugar Granola Butter Bites! Filled with Oat Haus Granola Butter and topped with gluten-free granola to add the perfect crunch.",
-          "view-btn-link": "shopify:\/\/products\/granolabutterfilledbites",
+          "section-image": "shopify:\/\/shop_images\/GB_for_Homepage_3_3fd282f0-0378-4aef-a5b1-7dd393e3f0e5.png",
+          "section-image-mobile": "shopify:\/\/shop_images\/TEXTGRAPHICS_IMAGES_26.jpg",
+          "section-heading": "EAT CHOCOLATE BE HOPPY",
+          "description": "Introducing JOJO's Individually Wrapped Easter Peanut Butter Bites!   Treat yourself and Fill YOUR basket this easter.",
+          "view-btn-link": "shopify:\/\/products\/easter-pb-wrapped-bites-1-ct",
           "view-btn": "SHOP NOW",
-          "heading-color": "#1961ae",
-          "description-color": "#6191b4",
-          "button-color": "#1961ae",
+          "heading-color": "#fa8f4a",
+          "description-color": "#949594",
+          "button-color": "#a76ecd",
           "button-text-color": "#ffffff"
         }
       },
