@@ -55,9 +55,9 @@
           "main_linklist": "sidebar_menu",
           "message": true,
           "home_page_only": false,
-          "message_text": "Limited Time Only...Easter Peanut Butter Bites! 🐰🥜",
+          "message_text": "FREE SHIPPING ON ORDER $40+",
           "message_link": "shopify:\/\/products\/easter-pb-wrapped-bites-1-ct",
-          "color_bg": "#ffa870",
+          "color_bg": "#5cb8b2",
           "color_text": "#ffffff"
         }
       },
@@ -208,14 +208,14 @@
       "1631885842f763354f": {
         "type": "slider-with-right-box",
         "settings": {
-          "section-image": "shopify:\/\/shop_images\/GB_for_Homepage_3_3fd282f0-0378-4aef-a5b1-7dd393e3f0e5.png",
+          "section-image": "shopify:\/\/shop_images\/BugsAndBerries6_db90dedc-fd7f-471f-be8b-04d2094c2b88.jpg",
           "section-image-mobile": "shopify:\/\/shop_images\/TEXTGRAPHICS_IMAGES_26.jpg",
-          "section-heading": "EAT CHOCOLATE BE HOPPY",
-          "description": "Introducing JOJO's Individually Wrapped Easter Peanut Butter Bites!   Treat yourself and Fill YOUR basket this easter.",
-          "view-btn-link": "shopify:\/\/products\/easter-pb-wrapped-bites-1-ct",
+          "section-heading": "YOUR DAILY BITE OF DARK CHOCOLATE",
+          "description": "Satisfy your cravings with JOJO's delicious dark chocolate that has 8g of sugar or less",
+          "view-btn-link": "https:\/\/jojoschocolate.com\/collections\/flavors",
           "view-btn": "SHOP NOW",
-          "heading-color": "#fa8f4a",
-          "description-color": "#949594",
+          "heading-color": "#5cb8b2",
+          "description-color": "#515151",
           "button-color": "#a76ecd",
           "button-text-color": "#ffffff"
         }
