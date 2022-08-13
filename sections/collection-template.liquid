@@ -18,7 +18,7 @@
 {% paginate collection.products by limit %}
 
 <div data-section-id="{{ section.id }}" data-section-type="collection-template">
-  <header class="collection-header">
+  {% comment %} <header class="collection-header">
     {%- assign is_filter_by_available = false -%}
     {%- if section.settings.tags_enable and collection.all_tags.size > 0 -%}
       {%- assign is_filter_by_available = true -%}
@@ -69,8 +69,8 @@
           {% endif %}
           {% if collection.title == "JOJO's, Chocolate Daily" %}
           	<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" id="find-your-flavor">
-  TAKE OUR FLAVOR QUIZ
-</button>
+              TAKE OUR FLAVOR QUIZ
+            </button>
           {% endif %}
         </div>
       </div>
@@ -127,9 +127,9 @@
         </div>
       </div>
     {% endif %}
-  </header>
+  </header> {% endcomment %}
 
-  <div class="page-width" id="Collection">
+  <div class="page-width" id="Collection" style="margin-top: 40px;">
     {% if section.settings.layout == 'grid' %}
       {% case section.settings.grid %}
       {% when 2 %}

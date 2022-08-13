@@ -80,8 +80,10 @@
       </li>
     {% else %}
       <li {% if link.active %} class="site-nav--active"{% endif %}>
+        {% assign full_url = "https://" | append: request.host | append: request.path %}
+
         <a href="{{ link.url }}"
-          class="site-nav__link site-nav__link--main{% if link.active %} site-nav__link--active{% endif %}"
+          class="site-nav__link site-nav__link--main {% if link.active or link.url == full_url %} site-nav__link--active{% endif %}"
           {% if link.current %} aria-current="page"{% endif %}
         >
           <span class="site-nav__label">{{ link.title | escape }}</span>

@@ -55,7 +55,7 @@
           "main_linklist": "sidebar_menu",
           "message": true,
           "home_page_only": false,
-          "message_text": "FREE SHIPPING ON ORDER $40+",
+          "message_text": "🚚   FREE SHIPPING ON ORDER $40+",
           "message_link": "shopify:\/\/products\/easter-pb-wrapped-bites-1-ct",
           "color_bg": "#5cb8b2",
           "color_text": "#ffffff"
@@ -208,8 +208,8 @@
       "1631885842f763354f": {
         "type": "slider-with-right-box",
         "settings": {
-          "section-image": "shopify:\/\/shop_images\/BugsAndBerries6_db90dedc-fd7f-471f-be8b-04d2094c2b88.jpg",
-          "section-image-mobile": "shopify:\/\/shop_images\/TEXTGRAPHICS_IMAGES_26.jpg",
+          "section-image": "shopify:\/\/shop_images\/CZ0A4292.jpg",
+          "section-image-mobile": "shopify:\/\/shop_images\/CZ0A4292_97320769-0b96-4571-9aea-934d9f4f3ec9.jpg",
           "section-heading": "YOUR DAILY BITE OF DARK CHOCOLATE",
           "description": "Satisfy your cravings with JOJO's delicious dark chocolate that has 8g of sugar or less",
           "view-btn-link": "https:\/\/jojoschocolate.com\/collections\/flavors",
@@ -240,7 +240,7 @@
           "16318897133fe65f4a-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/choco-bars_720x_900x_8d74d688-8bd9-40a1-aa32-de59493fbeca.jpg",
+              "image": "shopify:\/\/shop_images\/first_image.jpg",
               "width": "50%",
               "alignment": "center"
             }
@@ -277,8 +277,8 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/pb_bf860263-bfac-47ac-8cf1-3a1b0aeb26c9.png",
-              "title": "Peanut Butter Delight",
+              "image": "shopify:\/\/shop_images\/JOJO005_2021_PkgRfrsh_Bars_PntBttr_8pt4oz_Front_2.png",
+              "title": "Peanut Butter Filled",
               "text": "",
               "button_label": "",
               "button_link": "https:\/\/jojoschocolate.com\/products\/peanut-butter-delight-bars-8-4oz-bag-7-bars"
@@ -288,8 +288,8 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/hawaiian_98284a9d-cd87-40fa-b77f-dc884cd664a4.png",
-              "title": "Goes Hawaiian",
+              "image": "shopify:\/\/shop_images\/JOJO005_2021_PkgRfrsh_Bars_Hawaiian_8pt4oz_Front_2.png",
+              "title": "Macadamia Coconut Sea Salt",
               "text": "",
               "button_label": "",
               "button_link": "https:\/\/jojoschocolate.com\/products\/goes-hawaiian-bars-8-4oz-bag-7-bars"
@@ -299,8 +299,8 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/raspberry_a9d6c740-618a-4b05-ab00-6ca1ffb34b34.png",
-              "title": "Raspberry Dream",
+              "image": "shopify:\/\/shop_images\/JOJO005_2021_PkgRfrsh_Bars_RspbryDream_8pt4oz_Front_2.png",
+              "title": "Raspberry Almond Pistachio",
               "text": "",
               "button_label": "",
               "button_link": "https:\/\/jojoschocolate.com\/collections\/flavors\/products\/raspberry-dream-bars-8-4oz-bag-7-bars"
@@ -310,8 +310,8 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/original_3ddfe467-8b8d-4bd6-afaf-82c985021e22.png",
-              "title": "Original",
+              "image": "shopify:\/\/shop_images\/JOJO005_2021_PkgRfrsh_Bars_OrignlChoco_8pt4oz_Front_1.png",
+              "title": "Pistachio Almond Cranberry",
               "text": "",
               "button_label": "",
               "button_link": "https:\/\/jojoschocolate.com\/collections\/flavors\/products\/original-bars-8-4oz-bag-7-bars"
@@ -387,7 +387,7 @@
           "163223066062506915-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bars_720x_720x_4ef5a34a-9f7a-4565-bcec-ab0a9b24daf0.jpg",
+              "image": "shopify:\/\/shop_images\/second_image.jpg",
               "width": "50%",
               "alignment": "center"
             }

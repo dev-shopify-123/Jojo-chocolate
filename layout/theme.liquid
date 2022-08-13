@@ -77,6 +77,13 @@
       link.dispatchEvent(new Event('load'));
     }
   </script>
+  {% if template.name == "index" %}
+    <style>
+      .site-footer {
+        margin-top: 0px !important;
+      }
+    </style>
+  {% endif %}
 
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
 
